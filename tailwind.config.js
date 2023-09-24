@@ -8,7 +8,31 @@ export default {
     extend: {
       maxWidth: {
         'container': '1140px',
+      },
+      spacing: {
+        'w725': '725px',
+        'w806': '806px',
+      },
+      colors: {
+        'primary': '#D3EBFF',
+        'secondary': '#315AE7',
+        'third': '#E7F5FF',
+        'four': '#FAFDFF',
+        'five': '#333333',
+      },
+      fontSize:{
+        text28:"28px",
+        text50:"50px",
+      },
+      fontFamily: {
+        'robo': ['Roboto Slab'],
+        'mus': ['MuseoModerno'],
+        'pop': ['Poppins'],
+      },
+      backgroundImage: {
+        'banner': "url('src/assets/banner.png')",
       }
+      
     },
   },
   plugins: [],

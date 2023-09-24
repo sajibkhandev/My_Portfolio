@@ -5,10 +5,10 @@ import { Outlet } from 'react-router-dom'
 
 export default function RootElement() {
   return (
-    <div>
+    <>
         <Navber/>
         <Outlet/>
         <Footer/>
-    </div>
+    </>
   )
 }

@@ -6,6 +6,10 @@ import Image from '../components/Image'
 import aboutImage from '../assets/about.png'
 import Flex from '../components/Flex'
 import Education from '../components/icons/Education'
+import {TiStarburst} from 'react-icons/ti'
+
+import project1 from '../assets/project1.png'
+import project2 from '../assets/project2.png'
 
 export default function Home() {
   return (
@@ -20,7 +24,7 @@ export default function Home() {
     </div>
    </Section>
 
-   
+  
    <Section className='bg-third'>
     <Container>
       <div className='-translate-y-[120px]'>
@@ -57,6 +61,149 @@ export default function Home() {
     </Container>
 
    </Section>
+
+
+
+   <Section className='bg-third py-14'>
+    <Container>
+      <h2 className='text-black text-text50 font-medium font-robo pb-3 text-center'>Skills</h2>
+      <p className='text-black text-lg font-normal font-robo text-center'>My technical level</p>
+
+      <Flex className='justify-evenly'>
+        <div className='w-[430px] h-[280px] rounded-xl bg-four mt-16'>
+          <h4 className='pt-8 pb-8 text-center text-xl text-black font-robo font-normal'>Frontend developer</h4>
+
+          <Flex className='flex-wrap '>
+
+          <Flex className='gap-x-3 pb-4 pl-12 pr-10'>
+          <TiStarburst className='mt-0.5'/>
+          <div>
+            <h5 className='text-sm text-black font-medium  font-robo'>HTML</h5>
+            <p className='text-xs text-five font-normal  font-robo' >Experienced</p>
+          </div>
+          </Flex>
+
+          <Flex className='gap-x-3 pb-4 pl-12 pr-10'>
+          <TiStarburst className='mt-0.5'/>
+          <div>
+            <h5 className='text-sm text-black font-medium  font-robo'>Tailwind</h5>
+            <p className='text-xs text-five font-normal  font-robo' >Basic</p>
+          </div>
+          </Flex>
+          <Flex className='gap-x-3 pb-4 pl-12 pr-10'>
+          <TiStarburst className='mt-0.5'/>
+          <div>
+            <h5 className='text-sm text-black font-medium  font-robo'>Css</h5>
+            <p className='text-xs text-five font-normal  font-robo' >Experienced</p>
+          </div>
+          </Flex>
+          <Flex className='gap-x-3 pb-4 pl-12 pr-10'>
+          <TiStarburst className='mt-0.5'/>
+          <div>
+            <h5 className='text-sm text-black font-medium  font-robo'>JavaScript</h5>
+            <p className='text-xs text-five font-normal  font-robo' >Basic</p>
+          </div>
+          </Flex>
+          <Flex className='gap-x-3 pb-4 pl-12 pr-10'>
+          <TiStarburst className='mt-0.5'/>
+          <div>
+            <h5 className='text-sm text-black font-medium  font-robo'>Bootstrap</h5>
+            <p className='text-xs text-five font-normal  font-robo' >Experienced</p>
+          </div>
+          </Flex>
+          <Flex className='gap-x-3 pb-4 pl-12 pr-10'>
+          <TiStarburst className='mt-0.5'/>
+          <div>
+            <h5 className='text-sm text-black font-medium  font-robo'>Recat</h5>
+            <p className='text-xs text-five font-normal  font-robo' >Intermediate</p>
+          </div>
+          </Flex>
+
+
+
+          </Flex>
+
+        </div>
+        <div className='w-[430px] h-[280px] rounded-xl bg-four mt-16'>
+          <h4 className='pt-8 pb-8 text-center text-xl text-black font-robo font-normal'>Backend developer</h4>
+
+          <Flex className='flex-wrap '>
+
+          <Flex className='gap-x-3 pb-4 pl-12 pr-10'>
+          <TiStarburst className='mt-0.5'/>
+          <div>
+            <h5 className='text-sm text-black font-medium  font-robo'>Node</h5>
+            <p className='text-xs text-five font-normal  font-robo' >Intermediate</p>
+          </div>
+          </Flex>
+
+          <Flex className='gap-x-3 pb-4 pl-12 pr-10'>
+          <TiStarburst className='mt-0.5'/>
+          <div>
+            <h5 className='text-sm text-black font-medium  font-robo'>Express</h5>
+            <p className='text-xs text-five font-normal  font-robo' >Basic</p>
+          </div>
+          </Flex>
+          <Flex className='gap-x-3 pb-4 pl-12 pr-10'>
+          <TiStarburst className='mt-0.5'/>
+          <div>
+            <h5 className='text-sm text-black font-medium  font-robo'>MongDB</h5>
+            <p className='text-xs text-five font-normal  font-robo' >Intermediate</p>
+          </div>
+          </Flex>
+          <Flex className='gap-x-3 pb-4 pl-12 pr-10'>
+          <TiStarburst className='mt-0.5'/>
+          <div>
+            <h5 className='text-sm text-black font-medium  font-robo'>Git</h5>
+            <p className='text-xs text-five font-normal  font-robo' >Experienced</p>
+          </div>
+          </Flex>
+          <Flex className='gap-x-3 pb-4 pl-12 pr-10'>
+          <TiStarburst className='mt-0.5'/>
+          <div>
+            <h5 className='text-sm text-black font-medium  font-robo'>Firebase</h5>
+            <p className='text-xs text-five font-normal  font-robo' >Intermediate</p>
+          </div>
+          </Flex>
+          <Flex className='gap-x-3 pb-4 pl-12 pr-10'>
+          <TiStarburst className='mt-0.5'/>
+          <div>
+            <h5 className='text-sm text-black font-medium  font-robo'>SQL</h5>
+            <p className='text-xs text-five font-normal  font-robo' >Intermediate</p>
+          </div>
+          </Flex>
+
+
+
+          </Flex>
+
+        </div>
+      </Flex>
+    </Container>
+
+   </Section>
+   
+
+   <Section className='bg-third py-20'>
+    <Container>
+      <h2 className='text-black text-text50 font-semibold font-robo pb-3 text-center'>PROJECTS</h2>
+      <p className=' w-[780px]  mx-auto text-black text-lg font-normal font-robo  text-center'>Here you will find some of the personal and clients projects that I created with each project containing its own case study</p>
+
+      <Flex className='justify-between items-center pt-5'>
+        <Image src={project1}/>
+        <h3 className='w-w412 text-black text-text45 font-medium font-robo pb-3 text-center pt-12'>Automatically send invitations and messages on LinkedIn by creating</h3>
+      </Flex>
+      {/* Second Project */}
+
+      <Flex className='justify-between items-center pt-32  '>
+        <Image src={project2}/>
+        <h3 className='w-w390 text-black text-text45 font-medium font-robo pb-3 text-center '>Find clients easily on LinkedIn without any technical skills</h3>
+      </Flex>
+      
+
+    </Container>
+   </Section>
+   
    
   </>
   )

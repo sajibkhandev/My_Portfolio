@@ -12,6 +12,8 @@ export default {
       spacing: {
         'w725': '725px',
         'w806': '806px',
+        'w412': '412px',
+        'w390': '390px',
       },
       colors: {
         'primary': '#D3EBFF',
@@ -23,6 +25,7 @@ export default {
       fontSize:{
         text28:"28px",
         text50:"50px",
+        text45:"45px",
       },
       fontFamily: {
         'robo': ['Roboto Slab'],

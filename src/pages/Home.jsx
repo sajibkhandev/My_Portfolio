@@ -7,9 +7,17 @@ import aboutImage from '../assets/about.png'
 import Flex from '../components/Flex'
 import Education from '../components/icons/Education'
 import {TiStarburst} from 'react-icons/ti'
+import {FaYoutube,FaFacebookF,FaInstagram,FaTwitter,FaLinkedinIn} from 'react-icons/fa'
 
 import project1 from '../assets/project1.png'
 import project2 from '../assets/project2.png'
+import project3 from '../assets/project3.png'
+import project4 from '../assets/project4.png'
+import project5 from '../assets/project5.png'
+import service1 from '../assets/service1.png'
+import contact1 from '../assets/contact1.png'
+import footer from '../assets/footerLogo.png'
+import List from '../components/List'
 
 export default function Home() {
   return (
@@ -193,17 +201,112 @@ export default function Home() {
         <Image src={project1}/>
         <h3 className='w-w412 text-black text-text45 font-medium font-robo pb-3 text-center pt-12'>Automatically send invitations and messages on LinkedIn by creating</h3>
       </Flex>
-      {/* Second Project */}
+      {/* Second Project Start */}
 
       <Flex className='justify-between items-center pt-32  '>
         <Image src={project2}/>
         <h3 className='w-w390 text-black text-text45 font-medium font-robo pb-3 text-center '>Find clients easily on LinkedIn without any technical skills</h3>
       </Flex>
       
+      {/* Second Project end */}
+      <h2 className='text-black text-text50 font-normal font-robo pt-32 pb-8 text-center'>Event to Event Project</h2>
+      <ul className='flex justify-center gap-x-1 '>
+        <List text='All' className='text-2xl font-robo hover:bg-black py-1 px-4 hover:rounded hover:text-white duration-500 cursor-pointer'/>
+        <List text='Html' className='text-2xl font-robo hover:bg-black py-1 px-4 hover:rounded hover:text-white duration-500 cursor-pointer'/>
+        <List text='JavaScript' className='text-2xl font-robo hover:bg-black py-1 px-4 hover:rounded hover:text-white duration-500 cursor-pointer'/>
+        <List text='React' className='text-2xl font-robo hover:bg-black py-1 px-4 hover:rounded hover:text-white duration-500 cursor-pointer'/>
+      </ul>
+      <Flex className='justify-between pt-20'>
+        <Image src={project3}/>
+        <Image src={project4}/>
+        <Image src={project5}/>
+      </Flex>
 
     </Container>
    </Section>
    
+
+
+   <Section className='bg-third pt-14'>
+    <Container>
+      <h2 className='text-text50 text-black font-medium font-robo text-center pb-3'>Services</h2>
+      <p className='w-w833 text-center mx-auto text-lg text-black font-robo font-normal pb-24'>Our consultants have years of experience on the in success. ​Through the provision of our services. Find the service we provide</p>
+      <Flex className='justify-between'>
+        <Image src={service1}/>
+        <Image src={service1}/>
+        <Image src={service1}/>
+        <Image src={service1}/>
+      </Flex>
+    </Container>
+
+   </Section>
+
+   <Section className='bg-third py-24'>
+    <Container>
+      <h2 className='text-text50 text-black font-medium font-robo text-center pb-5'>CONTACT</h2>
+      <p className='w-w680 text-center mx-auto text-lg text-black font-robo font-normal pb-14'>Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</p>
+      <Flex className='justify-between'>
+        <h3 className='w-w412 text-black text-text45 font-medium font-robo pb-3 text-center pt-12'>Find clients easily on LinkedIn without any technical skills</h3>
+        <Image src={contact1} />
+        
+      </Flex>
+    </Container>
+
+   </Section>
+
+
+   <Section className='bg-black pt-20'>
+    <Container>
+      <Flex className='justify-between'>
+        <div className='w-6/12'>
+          <Flex className='gap-x-5 items-center pb-28'>
+            <Image src={footer}/>
+            <h4 className='text-4xl text-white font-robo font-semibold'>SAJIB KHAN</h4>
+          </Flex>
+          <Flex className='gap-x-4 pl-16'>
+            <FaYoutube className='text-white text-2xl'/>
+            <FaFacebookF className='text-white text-2xl'/>
+            <FaInstagram className='text-white text-2xl'/>
+            <FaTwitter className='text-white text-2xl'/>
+            <FaLinkedinIn className='text-white text-2xl'/>
+          </Flex>
+
+        </div>
+        <div className='w-2/12'>
+          <h6 className='text-base text-white font-robo font-semibold pb-9'>TOP FEATURES</h6>
+         <ul className='flex flex-col gap-y-2'>
+         <List className='text-sm text-white font-normal font-robo' text='Cold Email' />
+          <List className='text-sm text-white font-normal font-robo' text='Pricing' />
+          <List className='text-sm text-white font-normal font-robo' text='Emial code' />
+          <List className='text-sm text-white font-normal font-robo' text='LinkedIn' />
+          <List className='text-sm text-white font-normal font-robo' text='How it works?' />
+         </ul>
+        </div>
+        <div className='w-2/12'>
+          <h6 className='text-base text-white font-robo font-semibold pb-9'>PRODUCT</h6>
+         <ul className='flex flex-col gap-y-2'>
+         <List className='text-sm text-white font-normal font-robo' text='Restriction' />
+          <List className='text-sm text-white font-normal font-robo' text='Bypass' />
+          <List className='text-sm text-white font-normal font-robo' text='Ambassador' />
+          <List className='text-sm text-white font-normal font-robo' text='Team Plan' />/>
+         </ul>
+        </div>
+        
+        <div className='w-2/12'>
+          <h6 className='text-base text-white font-robo font-semibold pb-9'>ABOUT US</h6>
+         <ul className='flex flex-col gap-y-2'>
+         <List className='text-sm text-white font-normal font-robo' text='ABOUT US' />
+          <List className='text-sm text-white font-normal font-robo' text='Contact us' />
+          <List className='text-sm text-white font-normal font-robo' text='Emial code' />
+          <List className='text-sm text-white font-normal font-robo' text='Legal Notices' />
+         </ul>
+        </div>
+        
+      </Flex>
+      <p className='text-center text-sm text-white font-pop font-normal py-24'>Copyright 2023 Waapi, all rights reserved.</p>
+    </Container>
+   </Section>
+
    
   </>
   )

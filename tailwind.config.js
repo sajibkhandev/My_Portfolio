@@ -14,6 +14,8 @@ export default {
         'w806': '806px',
         'w412': '412px',
         'w390': '390px',
+        'w833': '833px',
+        'w680': '680px',
       },
       colors: {
         'primary': '#D3EBFF',

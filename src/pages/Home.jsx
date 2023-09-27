@@ -7,7 +7,9 @@ import aboutImage from '../assets/about.png'
 import Flex from '../components/Flex'
 import Education from '../components/icons/Education'
 import {TiStarburst} from 'react-icons/ti'
-import {FaYoutube,FaFacebookF,FaInstagram,FaTwitter,FaLinkedinIn} from 'react-icons/fa'
+import {FaYoutube,FaFacebookF,FaInstagram,FaTwitter,FaLinkedinIn,FaReact,FaPlus} from 'react-icons/fa'
+import {AiOutlineHtml5} from 'react-icons/ai'
+import {DiJavascript1 } from 'react-icons/di'
 
 import project1 from '../assets/project1.png'
 import project2 from '../assets/project2.png'
@@ -16,7 +18,7 @@ import project4 from '../assets/project4.png'
 import project5 from '../assets/project5.png'
 import service1 from '../assets/service1.png'
 import contact1 from '../assets/contact1.png'
-import footer from '../assets/footerLogo.png'
+
 import List from '../components/List'
 
 export default function Home() {
@@ -25,9 +27,9 @@ export default function Home() {
    <Section>
     <div className='bg-banner h-screen bg-no-repeat bg-center bg-cover'>
       <Container>
-        <h2 className='text-text50 text-black font-pop font-semibold pt-32 pb-4 text-center'>HEY, I'M MOHAMMAD SAJIB KHAN</h2>
-        <p className='text-center mx-auto w-w725  text-lg text-black font-robo font-normal '>A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product</p>
-        <Button text="Download CV" className='flex mx-auto mt-8'/>
+        <h2 className='text-text50 text-black font-pop font-semibold pt-36 pb-4 text-center'>HEY, I'M MOHAMMAD SAJIB KHAN</h2>
+        <p className='text-center mx-auto w-w725 leading-8  text-lg text-black font-robo font-normal '>A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product</p>
+        <Button text="View Project " className='flex mx-auto mt-8'/>
       </Container>
     </div>
    </Section>
@@ -46,14 +48,14 @@ export default function Home() {
 
         <div className='w-1/2'>
         <Flex className=' justify-between'>
-        <div className='bg-four rounded-lg w-[270px] h-[150px]'>
+        <div className='bg-four rounded-lg drop-shadow-lg w-[270px] h-[150px]'>
         <Education  className="flex justify-center mx-auto pt-4 w-[20px] h-[20px]"/>
         <h3 className='text-black text-xl font-robo font-medium text-center pt-6'>Experience</h3>
         <p className='text-five text-base font-robo font-normal text-center pt-2'>2 + years</p>
         <p className='text-five text-base font-robo font-normal text-center '>Frontend Development</p>
        </div>
 
-        <div className='bg-four rounded-lg w-[270px] h-[150px]'>
+        <div className='bg-four rounded-lg drop-shadow-lg w-[270px] h-[150px]'>
         <Education  className="flex justify-center mx-auto pt-4 w-[20px] h-[20px]"/>
         <h3 className='text-black text-xl font-robo font-medium text-center pt-6'>Education</h3>
         <p className='text-five text-base font-robo font-normal text-center pt-2'>B.S.c  Bachelors Degree</p>
@@ -61,7 +63,7 @@ export default function Home() {
        </div>
         </Flex>
         <p className='text-black text-lg font-normal font-robo pt-10 pb-6'>I'm a Frontend Web Developer building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.</p>
-        <Button text="Contact" className='px-12'/>
+        <Button text="Download CV" className='px-12'/>
         </div>
         
       </Flex>
@@ -78,7 +80,7 @@ export default function Home() {
       <p className='text-black text-lg font-normal font-robo text-center'>My technical level</p>
 
       <Flex className='justify-evenly'>
-        <div className='w-[430px] h-[280px] rounded-xl bg-four mt-16'>
+        <div className='w-[430px] h-[280px] rounded-xl drop-shadow-2xl bg-four mt-16'>
           <h4 className='pt-8 pb-8 text-center text-xl text-black font-robo font-normal'>Frontend developer</h4>
 
           <Flex className='flex-wrap '>
@@ -132,7 +134,7 @@ export default function Home() {
           </Flex>
 
         </div>
-        <div className='w-[430px] h-[280px] rounded-xl bg-four mt-16'>
+        <div className='w-[430px] h-[280px] rounded-xl drop-shadow-2xl bg-four mt-16'>
           <h4 className='pt-8 pb-8 text-center text-xl text-black font-robo font-normal'>Backend developer</h4>
 
           <Flex className='flex-wrap '>
@@ -227,19 +229,112 @@ export default function Home() {
    
 
 
-   <Section className='bg-third pt-14'>
+   <Section className='bg-third pt-14 pb-10'>
     <Container>
       <h2 className='text-text50 text-black font-medium font-robo text-center pb-3'>Services</h2>
-      <p className='w-w833 text-center mx-auto text-lg text-black font-robo font-normal pb-24'>Our consultants have years of experience on the in success. ​Through the provision of our services. Find the service we provide</p>
+      <p className='w-w833 text-center mx-auto text-lg text-black font-robo font-normal pb-20'>Our consultants have years of experience on the in success. ​Through the provision of our services. Find the service we provide</p>
       <Flex className='justify-between'>
-        <Image src={service1}/>
-        <Image src={service1}/>
-        <Image src={service1}/>
-        <Image src={service1}/>
+       
+      <div className=' group/div w-[265px] h-[310px] bg-four rounded-lg drop-shadow relative'>
+          <div className='group-hover/div:bg-seven w-[190px] h-[92px] bg-primary rounded-tr-lg absolute -bottom-[25px] left-0 '>
+          <Flex className='py-4 px-3 gap-x-3'>
+            <div className='group-hover/div:bg-white w-[30px] h-[2px] bg-black mt-3'></div>
+            <div>
+            <h4 className='group-hover/div:text-white text-xl text-black font-robo font-medium pb-1'>E-Commerce</h4>
+            <p className='group-hover/div:text-white text-sm text-black font-robo font-normal'>Development</p>
+          </div>
+          </Flex>
+          </div>
+          <div className='group/icon group-hover/div:bg-seven w-[40px] h-[40px] bg-primary rounded-full absolute right-5 bottom-5 flex justify-center items-center duration-500 z-10'>
+            <FaPlus className='text-sm group-hover/div:text-white group-hover/icon:rotate-[360deg] group-hover/icon:duration-500'/>
+            </div>
+          <div className='group/icon hover:bg-seven group-hover/div:bottom-20 w-[40px] h-[40px] bg-primary rounded-full absolute right-5 bottom-5 flex justify-center items-center  duration-500'>
+            <AiOutlineHtml5 className=' text-lg group-hover/icon:rotate-[360deg]  group-hover/icon:duration-500'/>
+          </div>
+          <div className='group/icon hover:bg-seven group-hover/div:bottom-[140px] w-[40px] h-[40px] bg-primary rounded-full absolute right-5 bottom-5 flex justify-center items-center  duration-500'>
+            <DiJavascript1 className='text-lg group-hover/icon:rotate-[360deg] group-hover/icon:duration-500'/>
+          </div>
+          <div className='group/icon hover:bg-seven group-hover/div:bottom-[200px] w-[40px] h-[40px] bg-primary rounded-full absolute right-5 bottom-5 flex justify-center items-center  duration-500'>
+            <FaReact className='text-lg  group-hover/icon:rotate-[360deg] group-hover/icon:duration-500'/>
+          </div>
+        </div>
+      <div className=' group/div w-[265px] h-[310px] bg-four rounded-lg drop-shadow relative'>
+          <div className='group-hover/div:bg-seven w-[190px] h-[92px] bg-primary rounded-tr-lg absolute -bottom-[25px] left-0 '>
+          <Flex className='py-4 px-3 gap-x-3'>
+            <div className='group-hover/div:bg-white w-[30px] h-[2px] bg-black mt-3'></div>
+            <div>
+            <h4 className='group-hover/div:text-white text-xl text-black font-robo font-medium pb-1'>Social Media</h4>
+            <p className='group-hover/div:text-white text-sm text-black font-robo font-normal'>Development</p>
+          </div>
+          </Flex>
+          </div>
+          <div className='group/icon group-hover/div:bg-seven w-[40px] h-[40px] bg-primary rounded-full absolute right-5 bottom-5 flex justify-center items-center duration-500 z-10'>
+            <FaPlus className='text-sm group-hover/div:text-white group-hover/icon:rotate-[360deg] group-hover/icon:duration-500'/>
+            </div>
+          <div className='group/icon hover:bg-seven group-hover/div:bottom-20 w-[40px] h-[40px] bg-primary rounded-full absolute right-5 bottom-5 flex justify-center items-center  duration-500'>
+            <AiOutlineHtml5 className=' text-lg group-hover/icon:rotate-[360deg]  group-hover/icon:duration-500'/>
+          </div>
+          <div className='group/icon hover:bg-seven group-hover/div:bottom-[140px] w-[40px] h-[40px] bg-primary rounded-full absolute right-5 bottom-5 flex justify-center items-center  duration-500'>
+            <DiJavascript1 className='text-lg group-hover/icon:rotate-[360deg] group-hover/icon:duration-500'/>
+          </div>
+          <div className='group/icon hover:bg-seven group-hover/div:bottom-[200px] w-[40px] h-[40px] bg-primary rounded-full absolute right-5 bottom-5 flex justify-center items-center  duration-500'>
+            <FaReact className='text-lg  group-hover/icon:rotate-[360deg] group-hover/icon:duration-500'/>
+          </div>
+        </div>
+      <div className=' group/div w-[265px] h-[310px] bg-four rounded-lg drop-shadow relative'>
+          <div className='group-hover/div:bg-seven w-[190px] h-[92px] bg-primary rounded-tr-lg absolute -bottom-[25px] left-0 '>
+          <Flex className='py-4 px-3 gap-x-3'>
+            <div className='group-hover/div:bg-white w-[30px] h-[2px] bg-black mt-3'></div>
+            <div>
+            <h4 className='group-hover/div:text-white text-xl text-black font-robo font-medium pb-1'>Corporate</h4>
+            <p className='group-hover/div:text-white text-sm text-black font-robo font-normal'>Development</p>
+          </div>
+          </Flex>
+          </div>
+          <div className='group/icon group-hover/div:bg-seven w-[40px] h-[40px] bg-primary rounded-full absolute right-5 bottom-5 flex justify-center items-center duration-500 z-10'>
+            <FaPlus className='text-sm group-hover/div:text-white group-hover/icon:rotate-[360deg] group-hover/icon:duration-500'/>
+            </div>
+          <div className='group/icon hover:bg-seven group-hover/div:bottom-20 w-[40px] h-[40px] bg-primary rounded-full absolute right-5 bottom-5 flex justify-center items-center  duration-500'>
+            <AiOutlineHtml5 className=' text-lg group-hover/icon:rotate-[360deg]  group-hover/icon:duration-500'/>
+          </div>
+          <div className='group/icon hover:bg-seven group-hover/div:bottom-[140px] w-[40px] h-[40px] bg-primary rounded-full absolute right-5 bottom-5 flex justify-center items-center  duration-500'>
+            <DiJavascript1 className='text-lg group-hover/icon:rotate-[360deg] group-hover/icon:duration-500'/>
+          </div>
+          <div className='group/icon hover:bg-seven group-hover/div:bottom-[200px] w-[40px] h-[40px] bg-primary rounded-full absolute right-5 bottom-5 flex justify-center items-center  duration-500'>
+            <FaReact className='text-lg  group-hover/icon:rotate-[360deg] group-hover/icon:duration-500'/>
+          </div>
+        </div>
+      <div className=' group/div w-[265px] h-[310px] bg-four rounded-lg drop-shadow relative'>
+          <div className='group-hover/div:bg-seven w-[190px] h-[92px] bg-primary rounded-tr-lg absolute -bottom-[25px] left-0 '>
+          <Flex className='py-4 px-3 gap-x-3'>
+            <div className='group-hover/div:bg-white w-[30px] h-[2px] bg-black mt-3'></div>
+            <div>
+            <h4 className='group-hover/div:text-white text-xl text-black font-robo font-medium pb-1'>Personal  </h4>
+            <p className='group-hover/div:text-white text-sm text-black font-robo font-normal'>Development</p>
+          </div>
+          </Flex>
+          </div>
+          <div className='group/icon group-hover/div:bg-seven w-[40px] h-[40px] bg-primary rounded-full absolute right-5 bottom-5 flex justify-center items-center duration-500 z-10'>
+            <FaPlus className='text-sm group-hover/div:text-white group-hover/icon:rotate-[360deg] group-hover/icon:duration-500'/>
+            </div>
+          <div className='group/icon hover:bg-seven group-hover/div:bottom-20 w-[40px] h-[40px] bg-primary rounded-full absolute right-5 bottom-5 flex justify-center items-center  duration-500'>
+            <AiOutlineHtml5 className=' text-lg group-hover/icon:rotate-[360deg]  group-hover/icon:duration-500'/>
+          </div>
+          <div className='group/icon hover:bg-seven group-hover/div:bottom-[140px] w-[40px] h-[40px] bg-primary rounded-full absolute right-5 bottom-5 flex justify-center items-center  duration-500'>
+            <DiJavascript1 className='text-lg group-hover/icon:rotate-[360deg] group-hover/icon:duration-500'/>
+          </div>
+          <div className='group/icon hover:bg-seven group-hover/div:bottom-[200px] w-[40px] h-[40px] bg-primary rounded-full absolute right-5 bottom-5 flex justify-center items-center  duration-500'>
+            <FaReact className='text-lg  group-hover/icon:rotate-[360deg] group-hover/icon:duration-500'/>
+          </div>
+        </div>
+     
+       
       </Flex>
     </Container>
 
    </Section>
+
+
 
    <Section className='bg-third py-24'>
     <Container>
@@ -247,66 +342,37 @@ export default function Home() {
       <p className='w-w680 text-center mx-auto text-lg text-black font-robo font-normal pb-14'>Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</p>
       <Flex className='justify-between'>
         <h3 className='w-w412 text-black text-text45 font-medium font-robo pb-3 text-center pt-12'>Find clients easily on LinkedIn without any technical skills</h3>
-        <Image src={contact1} />
+        <div className='w-[570px] h-[470px] bg-four rounded-2xl border-white border-2  '>
+         <div className='py-10 px-14'>
+         <form action="">
+            <div>
+            <label htmlFor="name" className='text-lg text-five font-medium font-robo pb-1.5 block'>Name: </label>
+            <input id="name" type="text" className='w-full bg-third rounded placeholder:text-six placeholder:text-base placeholder:font-robo placeholder:font-normal py-2 px-6 mb-3' placeholder='Enter Your Name:'/>
+            </div>
+            <div>
+            <label htmlFor="email" className='text-lg text-five font-medium font-robo pb-1.5 block'>Email: </label>
+            <input id="email" type="text" className='w-full bg-third rounded placeholder:text-six placeholder:text-base placeholder:font-robo placeholder:font-normal py-2 px-6 mb-3' placeholder='Enter Your Email:'/>
+            </div>
+            <div>
+            <label htmlFor="message" className='text-lg text-five font-medium font-robo pb-1.5 block'>Messages: </label>
+            <textarea id="message" type="text" className='w-full h-[110px] bg-third rounded placeholder:text-six placeholder:text-base placeholder:font-robo placeholder:font-normal py-2 px-6 mb-3' placeholder='Enter Your Messages:'/>
+            </div>
+            <Button text="Message" className='flex mx-auto mt-2 py-2' />
+            
+          </form>
+         </div>
+         
+        </div>
+        
         
       </Flex>
     </Container>
 
    </Section>
+   
 
 
-   <Section className='bg-black pt-20'>
-    <Container>
-      <Flex className='justify-between'>
-        <div className='w-6/12'>
-          <Flex className='gap-x-5 items-center pb-28'>
-            <Image src={footer}/>
-            <h4 className='text-4xl text-white font-robo font-semibold'>SAJIB KHAN</h4>
-          </Flex>
-          <Flex className='gap-x-4 pl-16'>
-            <FaYoutube className='text-white text-2xl'/>
-            <FaFacebookF className='text-white text-2xl'/>
-            <FaInstagram className='text-white text-2xl'/>
-            <FaTwitter className='text-white text-2xl'/>
-            <FaLinkedinIn className='text-white text-2xl'/>
-          </Flex>
-
-        </div>
-        <div className='w-2/12'>
-          <h6 className='text-base text-white font-robo font-semibold pb-9'>TOP FEATURES</h6>
-         <ul className='flex flex-col gap-y-2'>
-         <List className='text-sm text-white font-normal font-robo' text='Cold Email' />
-          <List className='text-sm text-white font-normal font-robo' text='Pricing' />
-          <List className='text-sm text-white font-normal font-robo' text='Emial code' />
-          <List className='text-sm text-white font-normal font-robo' text='LinkedIn' />
-          <List className='text-sm text-white font-normal font-robo' text='How it works?' />
-         </ul>
-        </div>
-        <div className='w-2/12'>
-          <h6 className='text-base text-white font-robo font-semibold pb-9'>PRODUCT</h6>
-         <ul className='flex flex-col gap-y-2'>
-         <List className='text-sm text-white font-normal font-robo' text='Restriction' />
-          <List className='text-sm text-white font-normal font-robo' text='Bypass' />
-          <List className='text-sm text-white font-normal font-robo' text='Ambassador' />
-          <List className='text-sm text-white font-normal font-robo' text='Team Plan' />/>
-         </ul>
-        </div>
-        
-        <div className='w-2/12'>
-          <h6 className='text-base text-white font-robo font-semibold pb-9'>ABOUT US</h6>
-         <ul className='flex flex-col gap-y-2'>
-         <List className='text-sm text-white font-normal font-robo' text='ABOUT US' />
-          <List className='text-sm text-white font-normal font-robo' text='Contact us' />
-          <List className='text-sm text-white font-normal font-robo' text='Emial code' />
-          <List className='text-sm text-white font-normal font-robo' text='Legal Notices' />
-         </ul>
-        </div>
-        
-      </Flex>
-      <p className='text-center text-sm text-white font-pop font-normal py-24'>Copyright 2023 Waapi, all rights reserved.</p>
-    </Container>
-   </Section>
-
+   
    
   </>
   )

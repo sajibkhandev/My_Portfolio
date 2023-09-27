@@ -19,10 +19,12 @@ export default {
       },
       colors: {
         'primary': '#D3EBFF',
-        'secondary': '#315AE7',
+        'secondary': '#3b82f6',
         'third': '#E7F5FF',
         'four': '#FAFDFF',
         'five': '#333333',
+        'six': '#4D4D4D',
+        'seven': '#93c5fd',
       },
       fontSize:{
         text28:"28px",
@@ -36,6 +38,9 @@ export default {
       },
       backgroundImage: {
         'banner': "url('src/assets/banner.png')",
+      },
+      rotate: {
+        'sajib360': '360deg',
       }
       
     },

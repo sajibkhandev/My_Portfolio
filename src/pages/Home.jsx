@@ -7,19 +7,24 @@ import aboutImage from '../assets/about.png'
 import Flex from '../components/Flex'
 import Education from '../components/icons/Education'
 import {TiStarburst} from 'react-icons/ti'
-import {FaYoutube,FaFacebookF,FaInstagram,FaTwitter,FaLinkedinIn,FaReact,FaPlus} from 'react-icons/fa'
-import {AiOutlineHtml5} from 'react-icons/ai'
-import {DiJavascript1 } from 'react-icons/di'
+import {FaYoutube,FaFacebookF,FaInstagram,FaTwitter,FaLinkedinIn} from 'react-icons/fa'
+
+
 
 import project1 from '../assets/project1.png'
 import project2 from '../assets/project2.png'
 import project3 from '../assets/project3.png'
 import project4 from '../assets/project4.png'
 import project5 from '../assets/project5.png'
+import project6 from '../assets/project6.png'
+import project7 from '../assets/project7.png'
+import project8 from '../assets/project8.png'
 import service1 from '../assets/service1.png'
 import contact1 from '../assets/contact1.png'
 
 import List from '../components/List'
+import EventProject from '../components/EventProject'
+import ServiceCard from '../components/ServiceCard'
 
 export default function Home() {
   return (
@@ -218,11 +223,16 @@ export default function Home() {
         <List text='JavaScript' className='text-2xl font-robo hover:bg-black py-1 px-4 hover:rounded hover:text-white duration-500 cursor-pointer'/>
         <List text='React' className='text-2xl font-robo hover:bg-black py-1 px-4 hover:rounded hover:text-white duration-500 cursor-pointer'/>
       </ul>
-      <Flex className='justify-between pt-20'>
-        <Image src={project3}/>
-        <Image src={project4}/>
-        <Image src={project5}/>
+      {/* Event to Event Project start*/}
+
+      <Flex className='justify-between flex-wrap pt-20'>
+        
+       <EventProject src={project6}/>
+       <EventProject src={project7}/>
+       <EventProject src={project8}/>
+      
       </Flex>
+      {/* Event to Event Project start*/}
 
     </Container>
    </Section>
@@ -234,104 +244,12 @@ export default function Home() {
       <h2 className='text-text50 text-black font-medium font-robo text-center pb-3'>Services</h2>
       <p className='w-w833 text-center mx-auto text-lg text-black font-robo font-normal pb-20'>Our consultants have years of experience on the in success. ​Through the provision of our services. Find the service we provide</p>
       <Flex className='justify-between'>
-       
-      <div className=' group/div w-[265px] h-[310px] bg-four rounded-lg drop-shadow relative'>
-          <div className='group-hover/div:bg-seven w-[190px] h-[92px] bg-primary rounded-tr-lg absolute -bottom-[25px] left-0 '>
-          <Flex className='py-4 px-3 gap-x-3'>
-            <div className='group-hover/div:bg-white w-[30px] h-[2px] bg-black mt-3'></div>
-            <div>
-            <h4 className='group-hover/div:text-white text-xl text-black font-robo font-medium pb-1'>E-Commerce</h4>
-            <p className='group-hover/div:text-white text-sm text-black font-robo font-normal'>Development</p>
-          </div>
-          </Flex>
-          </div>
-          <div className='group/icon group-hover/div:bg-seven w-[40px] h-[40px] bg-primary rounded-full absolute right-5 bottom-5 flex justify-center items-center duration-500 z-10'>
-            <FaPlus className='text-sm group-hover/div:text-white group-hover/icon:rotate-[360deg] group-hover/icon:duration-500'/>
-            </div>
-          <div className='group/icon hover:bg-seven group-hover/div:bottom-20 w-[40px] h-[40px] bg-primary rounded-full absolute right-5 bottom-5 flex justify-center items-center  duration-500'>
-            <AiOutlineHtml5 className=' text-lg group-hover/icon:rotate-[360deg]  group-hover/icon:duration-500'/>
-          </div>
-          <div className='group/icon hover:bg-seven group-hover/div:bottom-[140px] w-[40px] h-[40px] bg-primary rounded-full absolute right-5 bottom-5 flex justify-center items-center  duration-500'>
-            <DiJavascript1 className='text-lg group-hover/icon:rotate-[360deg] group-hover/icon:duration-500'/>
-          </div>
-          <div className='group/icon hover:bg-seven group-hover/div:bottom-[200px] w-[40px] h-[40px] bg-primary rounded-full absolute right-5 bottom-5 flex justify-center items-center  duration-500'>
-            <FaReact className='text-lg  group-hover/icon:rotate-[360deg] group-hover/icon:duration-500'/>
-          </div>
-        </div>
-      <div className=' group/div w-[265px] h-[310px] bg-four rounded-lg drop-shadow relative'>
-          <div className='group-hover/div:bg-seven w-[190px] h-[92px] bg-primary rounded-tr-lg absolute -bottom-[25px] left-0 '>
-          <Flex className='py-4 px-3 gap-x-3'>
-            <div className='group-hover/div:bg-white w-[30px] h-[2px] bg-black mt-3'></div>
-            <div>
-            <h4 className='group-hover/div:text-white text-xl text-black font-robo font-medium pb-1'>Social Media</h4>
-            <p className='group-hover/div:text-white text-sm text-black font-robo font-normal'>Development</p>
-          </div>
-          </Flex>
-          </div>
-          <div className='group/icon group-hover/div:bg-seven w-[40px] h-[40px] bg-primary rounded-full absolute right-5 bottom-5 flex justify-center items-center duration-500 z-10'>
-            <FaPlus className='text-sm group-hover/div:text-white group-hover/icon:rotate-[360deg] group-hover/icon:duration-500'/>
-            </div>
-          <div className='group/icon hover:bg-seven group-hover/div:bottom-20 w-[40px] h-[40px] bg-primary rounded-full absolute right-5 bottom-5 flex justify-center items-center  duration-500'>
-            <AiOutlineHtml5 className=' text-lg group-hover/icon:rotate-[360deg]  group-hover/icon:duration-500'/>
-          </div>
-          <div className='group/icon hover:bg-seven group-hover/div:bottom-[140px] w-[40px] h-[40px] bg-primary rounded-full absolute right-5 bottom-5 flex justify-center items-center  duration-500'>
-            <DiJavascript1 className='text-lg group-hover/icon:rotate-[360deg] group-hover/icon:duration-500'/>
-          </div>
-          <div className='group/icon hover:bg-seven group-hover/div:bottom-[200px] w-[40px] h-[40px] bg-primary rounded-full absolute right-5 bottom-5 flex justify-center items-center  duration-500'>
-            <FaReact className='text-lg  group-hover/icon:rotate-[360deg] group-hover/icon:duration-500'/>
-          </div>
-        </div>
-      <div className=' group/div w-[265px] h-[310px] bg-four rounded-lg drop-shadow relative'>
-          <div className='group-hover/div:bg-seven w-[190px] h-[92px] bg-primary rounded-tr-lg absolute -bottom-[25px] left-0 '>
-          <Flex className='py-4 px-3 gap-x-3'>
-            <div className='group-hover/div:bg-white w-[30px] h-[2px] bg-black mt-3'></div>
-            <div>
-            <h4 className='group-hover/div:text-white text-xl text-black font-robo font-medium pb-1'>Corporate</h4>
-            <p className='group-hover/div:text-white text-sm text-black font-robo font-normal'>Development</p>
-          </div>
-          </Flex>
-          </div>
-          <div className='group/icon group-hover/div:bg-seven w-[40px] h-[40px] bg-primary rounded-full absolute right-5 bottom-5 flex justify-center items-center duration-500 z-10'>
-            <FaPlus className='text-sm group-hover/div:text-white group-hover/icon:rotate-[360deg] group-hover/icon:duration-500'/>
-            </div>
-          <div className='group/icon hover:bg-seven group-hover/div:bottom-20 w-[40px] h-[40px] bg-primary rounded-full absolute right-5 bottom-5 flex justify-center items-center  duration-500'>
-            <AiOutlineHtml5 className=' text-lg group-hover/icon:rotate-[360deg]  group-hover/icon:duration-500'/>
-          </div>
-          <div className='group/icon hover:bg-seven group-hover/div:bottom-[140px] w-[40px] h-[40px] bg-primary rounded-full absolute right-5 bottom-5 flex justify-center items-center  duration-500'>
-            <DiJavascript1 className='text-lg group-hover/icon:rotate-[360deg] group-hover/icon:duration-500'/>
-          </div>
-          <div className='group/icon hover:bg-seven group-hover/div:bottom-[200px] w-[40px] h-[40px] bg-primary rounded-full absolute right-5 bottom-5 flex justify-center items-center  duration-500'>
-            <FaReact className='text-lg  group-hover/icon:rotate-[360deg] group-hover/icon:duration-500'/>
-          </div>
-        </div>
-      <div className=' group/div w-[265px] h-[310px] bg-four rounded-lg drop-shadow relative'>
-          <div className='group-hover/div:bg-seven w-[190px] h-[92px] bg-primary rounded-tr-lg absolute -bottom-[25px] left-0 '>
-          <Flex className='py-4 px-3 gap-x-3'>
-            <div className='group-hover/div:bg-white w-[30px] h-[2px] bg-black mt-3'></div>
-            <div>
-            <h4 className='group-hover/div:text-white text-xl text-black font-robo font-medium pb-1'>Personal  </h4>
-            <p className='group-hover/div:text-white text-sm text-black font-robo font-normal'>Development</p>
-          </div>
-          </Flex>
-          </div>
-          <div className='group/icon group-hover/div:bg-seven w-[40px] h-[40px] bg-primary rounded-full absolute right-5 bottom-5 flex justify-center items-center duration-500 z-10'>
-            <FaPlus className='text-sm group-hover/div:text-white group-hover/icon:rotate-[360deg] group-hover/icon:duration-500'/>
-            </div>
-          <div className='group/icon hover:bg-seven group-hover/div:bottom-20 w-[40px] h-[40px] bg-primary rounded-full absolute right-5 bottom-5 flex justify-center items-center  duration-500'>
-            <AiOutlineHtml5 className=' text-lg group-hover/icon:rotate-[360deg]  group-hover/icon:duration-500'/>
-          </div>
-          <div className='group/icon hover:bg-seven group-hover/div:bottom-[140px] w-[40px] h-[40px] bg-primary rounded-full absolute right-5 bottom-5 flex justify-center items-center  duration-500'>
-            <DiJavascript1 className='text-lg group-hover/icon:rotate-[360deg] group-hover/icon:duration-500'/>
-          </div>
-          <div className='group/icon hover:bg-seven group-hover/div:bottom-[200px] w-[40px] h-[40px] bg-primary rounded-full absolute right-5 bottom-5 flex justify-center items-center  duration-500'>
-            <FaReact className='text-lg  group-hover/icon:rotate-[360deg] group-hover/icon:duration-500'/>
-          </div>
-        </div>
-     
-       
+        <ServiceCard heading='E-Commerce' para='Development'/>
+        <ServiceCard heading='Social Media' para='Development'/>
+        <ServiceCard heading='Corporate' para='Development'/>
+        <ServiceCard heading='Personal' para='Development'/>
       </Flex>
     </Container>
-
    </Section>
 
 

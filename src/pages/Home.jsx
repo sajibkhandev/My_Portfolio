@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Section from '../components/Section'
 import Container from '../components/Container'
 import Button from '../components/Button'
@@ -22,11 +22,46 @@ import project8 from '../assets/project8.png'
 import service1 from '../assets/service1.png'
 import contact1 from '../assets/contact1.png'
 
+import javaScriptProject1 from '../assets/javaScriptProject1.png'
+
+
+import htmlProject1 from '../assets/htmlProject1.png'
+import htmlProject2 from '../assets/htmlProject2.png'
+import htmlProject3 from '../assets/htmlProject3.png'
+import htmlProject4 from '../assets/htmlProject4.png'
+import htmlProject5 from '../assets/htmlProject5.png'
+import htmlProject6 from '../assets/htmlProject6.png'
+import htmlProject7 from '../assets/htmlProject7.png'
+import htmlProject8 from '../assets/htmlProject8.png'
+
 import List from '../components/List'
 import EventProject from '../components/EventProject'
 import ServiceCard from '../components/ServiceCard'
 
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import PrevArrow from '../components/PrevArrow'
+import NextArrow from '../components/NextArrow'
+
+
+
 export default function Home() {
+  let [activeIndex,setActiveIndex]=useState(3)
+  let items=["All","Html","JavaScript","React"]
+  let handleClick=(index)=>{
+    setActiveIndex(index)
+
+  }
+  const settings = {
+    
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    prevArrow: <PrevArrow/>,
+    nextArrow: <NextArrow />,
+  };
+
   return (
   <>
    <Section>
@@ -216,22 +251,97 @@ export default function Home() {
       </Flex>
       
       {/* Second Project end */}
-      <h2 className='text-black text-text50 font-normal font-robo pt-32 pb-8 text-center'>Event to Event Project</h2>
-      <ul className='flex justify-center gap-x-1 '>
-        <List text='All' className='text-2xl font-robo hover:bg-black py-1 px-4 hover:rounded hover:text-white duration-500 cursor-pointer'/>
-        <List text='Html' className='text-2xl font-robo hover:bg-black py-1 px-4 hover:rounded hover:text-white duration-500 cursor-pointer'/>
-        <List text='JavaScript' className='text-2xl font-robo hover:bg-black py-1 px-4 hover:rounded hover:text-white duration-500 cursor-pointer'/>
-        <List text='React' className='text-2xl font-robo hover:bg-black py-1 px-4 hover:rounded hover:text-white duration-500 cursor-pointer'/>
-      </ul>
-      {/* Event to Event Project start*/}
 
-      <Flex className='justify-between flex-wrap pt-20'>
+      <h2 className='text-black text-text50 font-normal font-robo pt-32 pb-5 text-center'>Event to Event Project</h2>
+      <Flex className='flex justify-center gap-x-1 '>
+        {
+          items.map((item,index)=>(
+            <div key={index} onClick={()=>handleClick(index)}>
+              <List text={item} className={`${index===activeIndex?"bg-black text-white ":""} rounded text-2xl font-robo py-1 px-4   cursor-pointer`}/>
+            </div>
+          ))
+        }
         
-       <EventProject src={project6}/>
-       <EventProject src={project7}/>
-       <EventProject src={project8}/>
-      
+        
       </Flex>
+
+      {/* Event to Event Project start*/}
+      {
+        activeIndex===0?(
+          <Slider {...settings}>
+          <div >
+          <EventProject heading="Html Design" para="fins" src={htmlProject8}/>
+          </div>
+          <div>
+          <EventProject heading="Html Design" para="fins" src={htmlProject7}/>
+          </div>
+          <div>
+          <EventProject heading="Html Design" para="fins" src={htmlProject6}/>
+          </div>
+          <div>
+          <EventProject heading="Html Design" para="fins" src={htmlProject3}/>
+          </div>
+        </Slider>)
+        :
+        activeIndex===1?(
+          <Slider {...settings}>
+          <div>
+          <EventProject heading="Html Design" para="fins" src={htmlProject1}/>
+          </div>
+          <div>
+          <EventProject heading="Html Design" para="fins" src={htmlProject4}/>
+          </div>
+          <div>
+          <EventProject heading="Html Design" para="fins" src={htmlProject7}/>
+          </div>
+          <div>
+          <EventProject heading="Html Design" para="fins" src={htmlProject3}/>
+          </div>
+        </Slider>)
+        :
+        activeIndex===2?(
+          <Slider {...settings}>
+          <div>
+          <EventProject heading="Html Design" para="fins" src={htmlProject5}/>
+          </div>
+          <div>
+          <EventProject heading="Html Design" para="fins" src={htmlProject6}/>
+          </div>
+          <div>
+          <EventProject heading="Html Design" para="fins" src={htmlProject7}/>
+          </div>
+          <div>
+          <EventProject heading="Html Design" para="fins" src={htmlProject8}/>
+          </div>
+        </Slider>)
+        :
+        (<Slider {...settings}>
+          <div>
+          <EventProject heading="Html Design" para="fins" src={htmlProject1}/>
+          </div>
+          <div>
+          <EventProject heading="Html Design" para="fins" src={htmlProject2}/>
+          </div>
+          <div>
+          <EventProject heading="Html Design" para="fins" src={htmlProject3}/>
+          </div>
+          <div>
+          <EventProject heading="Html Design" para="fins" src={htmlProject4}/>
+          </div>
+          <div>
+          <EventProject heading="Html Design" para="fins" src={htmlProject5}/>
+          </div>
+          <div>
+          <EventProject heading="Html Design" para="fins" src={htmlProject6}/>
+          </div>
+          <div>
+          <EventProject heading="Html Design" para="fins" src={htmlProject7}/>
+          </div>
+          <div>
+          <EventProject heading="Html Design" para="fins" src={htmlProject8}/>
+          </div>
+        </Slider>)
+      }
       {/* Event to Event Project start*/}
 
     </Container>

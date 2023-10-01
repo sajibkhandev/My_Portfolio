@@ -5,9 +5,11 @@ export default function PrevArrow(props) {
     const { className, style, onClick } = props;
   return (
     <div
-      className={`${className} relative flex items-center justify-center rounded-lg w-[55px] h-[40px] bg-seven absolute top-[370px] left-[500px]`}
+      className={`${className} relative `}
       onClick={onClick}
-    ><BsArrowLeft className='text-xl text-white' /></div>
+    ><div className='flex items-center justify-center rounded-lg w-[55px] h-[40px] bg-seven absolute top-[330px] left-[500px]'>
+      <BsArrowLeft className='text-xl text-white' /></div>
+      </div>
   );
 }
 

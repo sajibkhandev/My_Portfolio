@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+
 import Section from '../components/Section'
 import Container from '../components/Container'
 import Button from '../components/Button'
@@ -7,61 +8,16 @@ import aboutImage from '../assets/about.png'
 import Flex from '../components/Flex'
 import Education from '../components/icons/Education'
 import {TiStarburst} from 'react-icons/ti'
-import {FaYoutube,FaFacebookF,FaInstagram,FaTwitter,FaLinkedinIn} from 'react-icons/fa'
-
 
 
 import project1 from '../assets/project1.png'
 import project2 from '../assets/project2.png'
-import project3 from '../assets/project3.png'
-import project4 from '../assets/project4.png'
-import project5 from '../assets/project5.png'
-import project6 from '../assets/project6.png'
-import project7 from '../assets/project7.png'
-import project8 from '../assets/project8.png'
-import service1 from '../assets/service1.png'
-import contact1 from '../assets/contact1.png'
-
-import javaScriptProject1 from '../assets/javaScriptProject1.png'
-
-
-import htmlProject1 from '../assets/htmlProject1.png'
-import htmlProject2 from '../assets/htmlProject2.png'
-import htmlProject3 from '../assets/htmlProject3.png'
-import htmlProject4 from '../assets/htmlProject4.png'
-import htmlProject5 from '../assets/htmlProject5.png'
-import htmlProject6 from '../assets/htmlProject6.png'
-import htmlProject7 from '../assets/htmlProject7.png'
-import htmlProject8 from '../assets/htmlProject8.png'
-
-import List from '../components/List'
-import EventProject from '../components/EventProject'
 import ServiceCard from '../components/ServiceCard'
-
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import PrevArrow from '../components/PrevArrow'
-import NextArrow from '../components/NextArrow'
+import ProjectPart2 from '../layouts/ProjectPart2'
 
 
 
 export default function Home() {
-  let [activeIndex,setActiveIndex]=useState(3)
-  let items=["All","Html","JavaScript","React"]
-  let handleClick=(index)=>{
-    setActiveIndex(index)
-
-  }
-  const settings = {
-    
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    prevArrow: <PrevArrow/>,
-    nextArrow: <NextArrow />,
-  };
-
   return (
   <>
    <Section>
@@ -251,97 +207,9 @@ export default function Home() {
       </Flex>
       
       {/* Second Project end */}
-
-      <h2 className='text-black text-text50 font-normal font-robo pt-32 pb-5 text-center'>Event to Event Project</h2>
-      <Flex className='flex justify-center gap-x-1 '>
-        {
-          items.map((item,index)=>(
-            <div key={index} onClick={()=>handleClick(index)}>
-              <List text={item} className={`${index===activeIndex?"bg-black text-white ":""} rounded text-2xl font-robo py-1 px-4   cursor-pointer`}/>
-            </div>
-          ))
-        }
-        
-        
-      </Flex>
-
       {/* Event to Event Project start*/}
-      {
-        activeIndex===0?(
-          <Slider {...settings}>
-          <div >
-          <EventProject heading="Html Design" para="fins" src={htmlProject8}/>
-          </div>
-          <div>
-          <EventProject heading="Html Design" para="fins" src={htmlProject7}/>
-          </div>
-          <div>
-          <EventProject heading="Html Design" para="fins" src={htmlProject6}/>
-          </div>
-          <div>
-          <EventProject heading="Html Design" para="fins" src={htmlProject3}/>
-          </div>
-        </Slider>)
-        :
-        activeIndex===1?(
-          <Slider {...settings}>
-          <div>
-          <EventProject heading="Html Design" para="fins" src={htmlProject1}/>
-          </div>
-          <div>
-          <EventProject heading="Html Design" para="fins" src={htmlProject4}/>
-          </div>
-          <div>
-          <EventProject heading="Html Design" para="fins" src={htmlProject7}/>
-          </div>
-          <div>
-          <EventProject heading="Html Design" para="fins" src={htmlProject3}/>
-          </div>
-        </Slider>)
-        :
-        activeIndex===2?(
-          <Slider {...settings}>
-          <div>
-          <EventProject heading="Html Design" para="fins" src={htmlProject5}/>
-          </div>
-          <div>
-          <EventProject heading="Html Design" para="fins" src={htmlProject6}/>
-          </div>
-          <div>
-          <EventProject heading="Html Design" para="fins" src={htmlProject7}/>
-          </div>
-          <div>
-          <EventProject heading="Html Design" para="fins" src={htmlProject8}/>
-          </div>
-        </Slider>)
-        :
-        (<Slider {...settings}>
-          <div>
-          <EventProject heading="Html Design" para="fins" src={htmlProject1}/>
-          </div>
-          <div>
-          <EventProject heading="Html Design" para="fins" src={htmlProject2}/>
-          </div>
-          <div>
-          <EventProject heading="Html Design" para="fins" src={htmlProject3}/>
-          </div>
-          <div>
-          <EventProject heading="Html Design" para="fins" src={htmlProject4}/>
-          </div>
-          <div>
-          <EventProject heading="Html Design" para="fins" src={htmlProject5}/>
-          </div>
-          <div>
-          <EventProject heading="Html Design" para="fins" src={htmlProject6}/>
-          </div>
-          <div>
-          <EventProject heading="Html Design" para="fins" src={htmlProject7}/>
-          </div>
-          <div>
-          <EventProject heading="Html Design" para="fins" src={htmlProject8}/>
-          </div>
-        </Slider>)
-      }
+
+      <ProjectPart2/>
       {/* Event to Event Project start*/}
 
     </Container>

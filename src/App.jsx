@@ -8,9 +8,8 @@ import {
 } from "react-router-dom";
 import RootElement from './components/RootElement';
 import Home from './pages/Home';
-// import Error from './pages/Error';
+import Error from './pages/Error';
 import About from './pages/About';
-import LiveProject from './components/LiveProject';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -28,16 +27,16 @@ const router = createBrowserRouter(
         path="/about"
         element={<About />} >
         </Route>
-
+        
         <Route
-        path="/home/:heading"
-        element={<LiveProject />} >
+        path="/about"
+        element={<About />} >
         </Route>
 
-        {/* <Route
+        <Route
         path="*"
         element={<Error />} >
-        </Route> */}
+        </Route>
      
     </Route>
     

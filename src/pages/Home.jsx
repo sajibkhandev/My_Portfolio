@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-
 import Section from '../components/Section'
 import Container from '../components/Container'
 import Button from '../components/Button'
@@ -8,16 +7,70 @@ import aboutImage from '../assets/about.png'
 import Flex from '../components/Flex'
 import Education from '../components/icons/Education'
 import {TiStarburst} from 'react-icons/ti'
+import {FaYoutube,FaFacebookF,FaInstagram,FaTwitter,FaLinkedinIn} from 'react-icons/fa'
+
 
 
 import project1 from '../assets/project1.png'
 import project2 from '../assets/project2.png'
+
+
+import reactProject1 from '../assets/reactProject1.png'
+import reactProject2 from '../assets/reactProject2.png'
+import reactProject3 from '../assets/reactProject3.png'
+import reactProject4 from '../assets/reactProject4.png'
+
+
+import javaScriptProject2 from '../assets/javaScriptProject2.png'
+import javaScriptProject3 from '../assets/javaScriptProject3.png'
+import javaScriptProject4 from '../assets/javaScriptProject4.png'
+import javaScriptProject6 from '../assets/javaScriptProject6.png'
+import javaScriptProject7 from '../assets/javaScriptProject7.png'
+import javaScriptProject8 from '../assets/javaScriptProject8.png'
+import javaScriptProject9 from '../assets/javaScriptProject9.png'
+
+
+import htmlProject1 from '../assets/htmlProject1.png'
+import htmlProject2 from '../assets/htmlProject2.png'
+import htmlProject3 from '../assets/htmlProject3.png'
+import htmlProject4 from '../assets/htmlProject4.png'
+import htmlProject5 from '../assets/htmlProject5.png'
+import htmlProject6 from '../assets/htmlProject6.png'
+import htmlProject7 from '../assets/htmlProject7.png'
+import htmlProject8 from '../assets/htmlProject8.png'
+
+import List from '../components/List'
+import EventProject from '../components/EventProject'
 import ServiceCard from '../components/ServiceCard'
-import ProjectPart2 from '../layouts/ProjectPart2'
+
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import PrevArrow from '../components/PrevArrow'
+import NextArrow from '../components/NextArrow'
+import { Link } from 'react-router-dom'
 
 
 
 export default function Home() {
+ 
+  let [activeIndex,setActiveIndex]=useState(3)
+  let items=["All","Html","JavaScript","React"]
+  let handleClick=(index)=>{
+    setActiveIndex(index)
+    
+  }
+  
+    
+  const settings = {
+    
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    prevArrow: <PrevArrow/>,
+    nextArrow: <NextArrow />,
+  };
+
   return (
   <>
    <Section>
@@ -209,7 +262,149 @@ export default function Home() {
       {/* Second Project end */}
       {/* Event to Event Project start*/}
 
-      <ProjectPart2/>
+      <h2 className='text-black text-text50 font-normal font-robo pt-32 pb-5 text-center'>Event to Event Project</h2>
+      <Flex className='flex justify-center gap-x-1 '>
+        {
+          items.map((item,index)=>(
+            <div key={index} onClick={()=>handleClick(index)}>
+              <List text={item} className={`${index===activeIndex?"bg-black text-white ":""} rounded text-2xl font-robo py-1 px-4   cursor-pointer`}/>
+            </div>
+          ))
+        }
+        
+        
+      </Flex>
+      {
+        activeIndex===0?(
+          <Slider {...settings}>
+            <Link to='https://sajibkhandev.github.io/Project-12_Slider/'>
+            <div>
+          <EventProject heading="Ohma Design" para="Html" src={htmlProject6}/>
+          </div>
+            </Link>
+          <div>
+          <EventProject heading="Combine" para="Jscript" src={javaScriptProject7}/>
+          </div>
+          <div>
+          <EventProject heading="Finsweet Design" para="Html" src={htmlProject2}/>
+          </div>
+          <div>
+          <EventProject heading="Slider" para="Jscript" src={javaScriptProject2}/>
+          </div>
+         <div>
+          <EventProject heading="Avada Design" para="Html" src={htmlProject5}/>
+          </div>
+          <div>
+          <EventProject heading="Query Design" para="Html" src={htmlProject8}/>
+          </div>
+          <div>
+          <EventProject heading="Game Design" para="React" src={reactProject1}/>
+          </div>
+          <div>
+          <EventProject heading="Innovate Design" para="Html" src={htmlProject7}/>
+          </div>
+          <div>
+          <EventProject heading="Counter" para="Jscript" src={javaScriptProject6}/>
+          </div>
+          <div>
+          <EventProject heading="Todo Design" para="React" src={reactProject3}/>
+          </div>
+          <div>
+          <EventProject heading="Innovate2 Design" para="Html" src={htmlProject3}/>
+          </div>
+          <div>
+          <EventProject heading="You Sulition Design" para="Html" src={htmlProject4}/>
+          </div>
+          <div>
+          <EventProject heading="Form Design" para="React" src={reactProject4}/>
+          </div>
+          <div>
+          <EventProject heading="Facebook Demo" para="Jscript" src={javaScriptProject3}/>
+          </div>
+          <div>
+          <EventProject heading="Stack Design" para="Html" src={htmlProject1}/>
+          </div>
+          <div>
+          <EventProject heading="Search Design" para="React" src={reactProject2}/>
+          </div>
+          <div>
+          <EventProject heading="Calculator" para="Jscript" src={javaScriptProject8}/>
+          </div>
+          <div>
+          <EventProject heading="Multipul Game" para="Jscript" src={javaScriptProject4}/>
+          </div>
+        </Slider>)
+        :
+        activeIndex===1?(
+          <Slider {...settings}>
+           <div>
+          <EventProject heading="Innovate Design" para="Html" src={htmlProject7}/>
+          </div>
+          <div>
+          <EventProject heading="Innovate2 Design" para="Html" src={htmlProject3}/>
+          </div>
+          <div>
+          <EventProject heading="Finsweet Design" para="Html" src={htmlProject2}/>
+          </div>
+          <div>
+          <EventProject heading="You Sulition Design" para="Html" src={htmlProject4}/>
+          </div>
+          <div>
+          <EventProject heading="Avada Design" para="Html" src={htmlProject5}/>
+          </div>
+          <div>
+          <EventProject heading="Ohma Design" para="Html" src={htmlProject6}/>
+          </div>
+          <div>
+          <EventProject heading="Stack Design" para="Html" src={htmlProject1}/>
+          </div>
+          <div>
+          <EventProject heading="Query Design" para="Html" src={htmlProject8}/>
+          </div>
+          
+        </Slider>)
+        :
+        activeIndex===2?(
+          <Slider {...settings}>
+          <div>
+          <EventProject heading="Combine" para="Jscript" src={javaScriptProject7}/>
+          </div>
+          <div>
+          <EventProject heading="Slider" para="Jscript" src={javaScriptProject2}/>
+          </div>
+          <div>
+          <EventProject heading="CountDown" para="Jscript" src={javaScriptProject9}/>
+          </div>
+          <div>
+          <EventProject heading="Counter" para="Jscript" src={javaScriptProject6}/>
+          </div>
+          <div>
+          <EventProject heading="Facebook Demo" para="Jscript" src={javaScriptProject3}/>
+          </div>
+          <div>
+          <EventProject heading="Calculator" para="Jscript" src={javaScriptProject8}/>
+          </div>
+          <div>
+          <EventProject heading="Multipul Game" para="Jscript" src={javaScriptProject4}/>
+          </div>
+        </Slider>)
+        :
+        (<Slider {...settings}>
+          <div>
+          <EventProject heading="Search Design" para="React" src={reactProject2}/>
+          </div>
+          <div>
+          <EventProject heading="Game Design" para="React" src={reactProject1}/>
+          </div>
+          <div>
+          <EventProject heading="Form Design" para="React" src={reactProject4}/>
+          </div>
+          <div>
+          <EventProject heading="Todo Design" para="React" src={reactProject3}/>
+          </div>
+          
+        </Slider>)
+      }
       {/* Event to Event Project start*/}
 
     </Container>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Section from '../components/Section'
 import Container from '../components/Container'
 import Button from '../components/Button'
@@ -7,90 +7,42 @@ import aboutImage from '../assets/about.png'
 import Flex from '../components/Flex'
 import Education from '../components/icons/Education'
 import {TiStarburst} from 'react-icons/ti'
-import {FaYoutube,FaFacebookF,FaInstagram,FaTwitter,FaLinkedinIn} from 'react-icons/fa'
-
-
+import {BsArrowRight } from 'react-icons/bs'
 
 import project1 from '../assets/project1.png'
 import project2 from '../assets/project2.png'
 
 
-import reactProject1 from '../assets/reactProject1.png'
-import reactProject2 from '../assets/reactProject2.png'
-import reactProject3 from '../assets/reactProject3.png'
-import reactProject4 from '../assets/reactProject4.png'
-
-
-import javaScriptProject2 from '../assets/javaScriptProject2.png'
-import javaScriptProject3 from '../assets/javaScriptProject3.png'
-import javaScriptProject4 from '../assets/javaScriptProject4.png'
-import javaScriptProject6 from '../assets/javaScriptProject6.png'
-import javaScriptProject7 from '../assets/javaScriptProject7.png'
-import javaScriptProject8 from '../assets/javaScriptProject8.png'
-import javaScriptProject9 from '../assets/javaScriptProject9.png'
-
-
-import htmlProject1 from '../assets/htmlProject1.png'
-import htmlProject2 from '../assets/htmlProject2.png'
-import htmlProject3 from '../assets/htmlProject3.png'
-import htmlProject4 from '../assets/htmlProject4.png'
-import htmlProject5 from '../assets/htmlProject5.png'
-import htmlProject6 from '../assets/htmlProject6.png'
-import htmlProject7 from '../assets/htmlProject7.png'
-import htmlProject8 from '../assets/htmlProject8.png'
-
-import List from '../components/List'
-import EventProject from '../components/EventProject'
 import ServiceCard from '../components/ServiceCard'
-
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import PrevArrow from '../components/PrevArrow'
-import NextArrow from '../components/NextArrow'
+import ProjectSecond from '../components/ProjectSecond'
 import { Link } from 'react-router-dom'
-
-
 
 export default function Home() {
  
-  let [activeIndex,setActiveIndex]=useState(3)
-  let items=["All","Html","JavaScript","React"]
-  let handleClick=(index)=>{
-    setActiveIndex(index)
-    
-  }
   
-    
-  const settings = {
-    
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    prevArrow: <PrevArrow/>,
-    nextArrow: <NextArrow />,
-  };
 
   return (
   <>
-   <Section>
-    <div className='bg-banner h-screen bg-no-repeat bg-center bg-cover'>
+   <Section className='bg-primary pb-32'>
+      {/* <div className='bg-banner h-screen bg-no-repeat bg-center bg-cover'></div> */}
       <Container>
-        <h2 className='text-text50 text-black font-pop font-semibold pt-36 pb-4 text-center'>HEY, I'M MOHAMMAD SAJIB KHAN</h2>
-        <p className='text-center mx-auto w-w725 leading-8  text-lg text-black font-robo font-normal '>A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product</p>
+        <h2 className='text-text50 text-black font-pop font-semibold pt-32 pb-4 text-center'>HEY, I'M MOHAMMAD SAJIB KHAN</h2>
+        <p className='text-center mx-auto w-w725 leading-8  text-lg text-black font-robo font-normal'>A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product</p>
         <Button text="View Project " className='flex mx-auto mt-8'/>
       </Container>
-    </div>
+    
    </Section>
 
   
-   <Section className='bg-third'>
+   <Section className='bg-third py-28'>
     <Container>
-      <div className='-translate-y-[120px]'>
+      {/* <div className='-translate-y-[120px]'></div> */}
+      <div className='pb-14'>
       <h2 className='text-text50 text-black font-normal font-robo text-center'>ABOUT ME</h2>
-      <p className='w-w806 text-center mx-auto text-lg text-black font-robo font-normal pt-7'>Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</p>
+      <p className='w-w806 text-center mx-auto text-lg text-black font-robo font-normal pt-4'>Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</p>
       </div>
-      <Flex className='-translate-y-[70px]'>
+      {/* <div className='-translate-y-[70px]'></div> */}
+      <Flex >
         <div className='w-1/2 flex items-center'>
         <Image src={aboutImage} />
         </div>
@@ -111,7 +63,7 @@ export default function Home() {
         <p className='text-five text-base font-robo font-normal text-center '>M.S.c  Masters Degree</p>
        </div>
         </Flex>
-        <p className='text-black text-lg font-normal font-robo pt-10 pb-6'>I'm a Frontend Web Developer building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.</p>
+        <p className='text-black text-lg font-normal font-robo pt-10 pb-8'>I'm a Frontend Web Developer building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.</p>
         <Button text="Download CV" className='px-12'/>
         </div>
         
@@ -123,7 +75,7 @@ export default function Home() {
 
 
 
-   <Section className='bg-third py-14'>
+   <Section className='bg-third pt-5 pb-16'>
     <Container>
       <h2 className='text-black text-text50 font-medium font-robo pb-3 text-center'>Skills</h2>
       <p className='text-black text-lg font-normal font-robo text-center'>My technical level</p>
@@ -248,163 +200,42 @@ export default function Home() {
       <h2 className='text-black text-text50 font-semibold font-robo pb-3 text-center'>PROJECTS</h2>
       <p className=' w-[780px]  mx-auto text-black text-lg font-normal font-robo  text-center'>Here you will find some of the personal and clients projects that I created with each project containing its own case study</p>
 
-      <Flex className='justify-between items-center pt-5'>
+      <Flex className='justify-between items-center pt-5 group/project1'>
         <Image src={project1}/>
-        <h3 className='w-w412 text-black text-text45 font-medium font-robo pb-3 text-center pt-12'>Automatically send invitations and messages on LinkedIn by creating</h3>
+        <div>
+        <h3 className='group/project1 w-w412 text-black text-text45 font-medium font-robo pb-8 text-center pt-12'>TolksME is a successful Open-Source project that I created</h3>
+
+      <Link className='relative group/project1'>
+      <div className=' flex justify-center items-center gap-x-3'>
+       <p className='z-10 text-lg text-black font-robo font-semibold'>Case Study</p>
+        <BsArrowRight className='mt-1 z-10'/>
+       </div>
+        <div className='group-hover/project1:w-[158px] duration-500 absolute -top-[5px] left-[128px] w-[60px] h-[40px] bg-seven'></div>
+      </Link>
+
+        </div>
       </Flex>
       {/* Second Project Start */}
 
-      <Flex className='justify-between items-center pt-32  '>
-        <Image src={project2}/>
-        <h3 className='w-w390 text-black text-text45 font-medium font-robo pb-3 text-center '>Find clients easily on LinkedIn without any technical skills</h3>
+      <Flex className='justify-between items-center pt-36 group/project2 '>
+      <Image src={project2}/>
+        <div>
+        <h3 className='group/project2 w-w412 text-black text-text45 font-medium font-robo pb-8 text-center pt-12'>TolksME is a successful Open-Source project that I created</h3>
+
+      <Link className='relative group/project2'>
+      <div className=' flex justify-center items-center gap-x-3'>
+       <p className='z-10 text-lg text-black font-robo font-semibold'>Case Study</p>
+        <BsArrowRight className='mt-1 z-10'/>
+       </div>
+        <div className='group-hover/project2:w-[158px] duration-500 absolute -top-[5px] left-[128px] w-[60px] h-[40px] bg-seven'></div>
+      </Link>
+
+        </div>
       </Flex>
       
       {/* Second Project end */}
       {/* Event to Event Project start*/}
-
-      <h2 className='text-black text-text50 font-normal font-robo pt-32 pb-5 text-center'>Event to Event Project</h2>
-      <Flex className='flex justify-center gap-x-1 '>
-        {
-          items.map((item,index)=>(
-            <div key={index} onClick={()=>handleClick(index)}>
-              <List text={item} className={`${index===activeIndex?"bg-black text-white ":""} rounded text-2xl font-robo py-1 px-4   cursor-pointer`}/>
-            </div>
-          ))
-        }
-        
-        
-      </Flex>
-      {
-        activeIndex===0?(
-          <Slider {...settings}>
-            <Link to='https://sajibkhandev.github.io/Project-12_Slider/'>
-            <div>
-          <EventProject heading="Ohma Design" para="Html" src={htmlProject6}/>
-          </div>
-            </Link>
-          <div>
-          <EventProject heading="Combine" para="Jscript" src={javaScriptProject7}/>
-          </div>
-          <div>
-          <EventProject heading="Finsweet Design" para="Html" src={htmlProject2}/>
-          </div>
-          <div>
-          <EventProject heading="Slider" para="Jscript" src={javaScriptProject2}/>
-          </div>
-         <div>
-          <EventProject heading="Avada Design" para="Html" src={htmlProject5}/>
-          </div>
-          <div>
-          <EventProject heading="Query Design" para="Html" src={htmlProject8}/>
-          </div>
-          <div>
-          <EventProject heading="Game Design" para="React" src={reactProject1}/>
-          </div>
-          <div>
-          <EventProject heading="Innovate Design" para="Html" src={htmlProject7}/>
-          </div>
-          <div>
-          <EventProject heading="Counter" para="Jscript" src={javaScriptProject6}/>
-          </div>
-          <div>
-          <EventProject heading="Todo Design" para="React" src={reactProject3}/>
-          </div>
-          <div>
-          <EventProject heading="Innovate2 Design" para="Html" src={htmlProject3}/>
-          </div>
-          <div>
-          <EventProject heading="You Sulition Design" para="Html" src={htmlProject4}/>
-          </div>
-          <div>
-          <EventProject heading="Form Design" para="React" src={reactProject4}/>
-          </div>
-          <div>
-          <EventProject heading="Facebook Demo" para="Jscript" src={javaScriptProject3}/>
-          </div>
-          <div>
-          <EventProject heading="Stack Design" para="Html" src={htmlProject1}/>
-          </div>
-          <div>
-          <EventProject heading="Search Design" para="React" src={reactProject2}/>
-          </div>
-          <div>
-          <EventProject heading="Calculator" para="Jscript" src={javaScriptProject8}/>
-          </div>
-          <div>
-          <EventProject heading="Multipul Game" para="Jscript" src={javaScriptProject4}/>
-          </div>
-        </Slider>)
-        :
-        activeIndex===1?(
-          <Slider {...settings}>
-           <div>
-          <EventProject heading="Innovate Design" para="Html" src={htmlProject7}/>
-          </div>
-          <div>
-          <EventProject heading="Innovate2 Design" para="Html" src={htmlProject3}/>
-          </div>
-          <div>
-          <EventProject heading="Finsweet Design" para="Html" src={htmlProject2}/>
-          </div>
-          <div>
-          <EventProject heading="You Sulition Design" para="Html" src={htmlProject4}/>
-          </div>
-          <div>
-          <EventProject heading="Avada Design" para="Html" src={htmlProject5}/>
-          </div>
-          <div>
-          <EventProject heading="Ohma Design" para="Html" src={htmlProject6}/>
-          </div>
-          <div>
-          <EventProject heading="Stack Design" para="Html" src={htmlProject1}/>
-          </div>
-          <div>
-          <EventProject heading="Query Design" para="Html" src={htmlProject8}/>
-          </div>
-          
-        </Slider>)
-        :
-        activeIndex===2?(
-          <Slider {...settings}>
-          <div>
-          <EventProject heading="Combine" para="Jscript" src={javaScriptProject7}/>
-          </div>
-          <div>
-          <EventProject heading="Slider" para="Jscript" src={javaScriptProject2}/>
-          </div>
-          <div>
-          <EventProject heading="CountDown" para="Jscript" src={javaScriptProject9}/>
-          </div>
-          <div>
-          <EventProject heading="Counter" para="Jscript" src={javaScriptProject6}/>
-          </div>
-          <div>
-          <EventProject heading="Facebook Demo" para="Jscript" src={javaScriptProject3}/>
-          </div>
-          <div>
-          <EventProject heading="Calculator" para="Jscript" src={javaScriptProject8}/>
-          </div>
-          <div>
-          <EventProject heading="Multipul Game" para="Jscript" src={javaScriptProject4}/>
-          </div>
-        </Slider>)
-        :
-        (<Slider {...settings}>
-          <div>
-          <EventProject heading="Search Design" para="React" src={reactProject2}/>
-          </div>
-          <div>
-          <EventProject heading="Game Design" para="React" src={reactProject1}/>
-          </div>
-          <div>
-          <EventProject heading="Form Design" para="React" src={reactProject4}/>
-          </div>
-          <div>
-          <EventProject heading="Todo Design" para="React" src={reactProject3}/>
-          </div>
-          
-        </Slider>)
-      }
+       <ProjectSecond/>
       {/* Event to Event Project start*/}
 
     </Container>

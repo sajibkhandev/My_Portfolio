@@ -9,7 +9,7 @@ import List from '../components/List'
 
 export default function Navber() {
   return (
-    <Section className='bg-primary py-12'>
+    <Section className='bg-primary py-16'>
         <Container>
             <Flex>
                 <div className='w-1/2'>

@@ -16,6 +16,10 @@ export default {
         'w390': '390px',
         'w833': '833px',
         'w680': '680px',
+        'w270': '270px',
+        'w20': '20px',
+        'h150': '150px',
+        'h20': '20px',
       },
       colors: {
         'primary': '#D3EBFF',

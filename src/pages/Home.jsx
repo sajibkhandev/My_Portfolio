@@ -15,7 +15,8 @@ import project2 from '../assets/project2.png'
 
 import ServiceCard from '../components/ServiceCard'
 import ProjectSecond from '../components/ProjectSecond'
-import { Link } from 'react-router-dom'
+import { Link as RouterLink  } from 'react-router-dom'
+import { Link as ScrollLink } from 'react-scroll'
 
 export default function Home() {
  
@@ -23,21 +24,25 @@ export default function Home() {
 
   return (
   <>
-   <Section className='bg-primary pb-32'>
+   <Section className='bg-primary pb-32' >
       {/* <div className='bg-banner h-screen bg-no-repeat bg-center bg-cover'></div> */}
       <Container>
+        <div id="hero">
         <h2 className='text-text50 text-black font-pop font-semibold pt-32 pb-4 text-center'>HEY, I'M MOHAMMAD SAJIB KHAN</h2>
         <p className='text-center mx-auto w-w725 leading-8  text-lg text-black font-robo font-normal'>A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product</p>
-        <Button text="View Project " className='flex mx-auto mt-8'/>
+        
+        <ScrollLink to="project2" spy={true} smooth={true} offset={50} duration={1200} ><Button text="View Project" className='flex mx-auto mt-8 '/></ScrollLink>
+        </div>
       </Container>
     
    </Section>
 
   
-   <Section className='bg-third py-28'>
-    <Container>
+   <Section className='bg-third py-28' >
+    <Container >
       {/* <div className='-translate-y-[120px]'></div> */}
-      <div className='pb-14'>
+      <div id="about">
+      <div className='pb-14' >
       <h2 className='text-text50 text-black font-normal font-robo text-center'>ABOUT ME</h2>
       <p className='w-w806 text-center mx-auto text-lg text-black font-robo font-normal pt-4'>Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</p>
       </div>
@@ -49,15 +54,15 @@ export default function Home() {
 
         <div className='w-1/2'>
         <Flex className=' justify-between'>
-        <div className='bg-four rounded-lg drop-shadow-lg w-[270px] h-[150px]'>
-        <Education  className="flex justify-center mx-auto pt-4 w-[20px] h-[20px]"/>
+        <div className='bg-four rounded-lg drop-shadow-lg w-w270 h-h150'>
+        <Education  className="flex justify-center mx-auto pt-4 w-w20 h-h20"/>
         <h3 className='text-black text-xl font-robo font-medium text-center pt-6'>Experience</h3>
         <p className='text-five text-base font-robo font-normal text-center pt-2'>2 + years</p>
         <p className='text-five text-base font-robo font-normal text-center '>Frontend Development</p>
        </div>
 
-        <div className='bg-four rounded-lg drop-shadow-lg w-[270px] h-[150px]'>
-        <Education  className="flex justify-center mx-auto pt-4 w-[20px] h-[20px]"/>
+        <div className='bg-four rounded-lg drop-shadow-lg w-w270 h-h150'>
+        <Education  className="flex justify-center mx-auto pt-4 w-w20 h-h20"/>
         <h3 className='text-black text-xl font-robo font-medium text-center pt-6'>Education</h3>
         <p className='text-five text-base font-robo font-normal text-center pt-2'>B.S.c  Bachelors Degree</p>
         <p className='text-five text-base font-robo font-normal text-center '>M.S.c  Masters Degree</p>
@@ -68,6 +73,7 @@ export default function Home() {
         </div>
         
       </Flex>
+      </div>
 
     </Container>
 
@@ -129,11 +135,7 @@ export default function Home() {
             <p className='text-xs text-five font-normal  font-robo' >Intermediate</p>
           </div>
           </Flex>
-
-
-
           </Flex>
-
         </div>
         <div className='w-[430px] h-[280px] rounded-xl drop-shadow-2xl bg-four mt-16'>
           <h4 className='pt-8 pb-8 text-center text-xl text-black font-robo font-normal'>Backend developer</h4>
@@ -183,11 +185,7 @@ export default function Home() {
             <p className='text-xs text-five font-normal  font-robo' >Intermediate</p>
           </div>
           </Flex>
-
-
-
           </Flex>
-
         </div>
       </Flex>
     </Container>
@@ -197,6 +195,7 @@ export default function Home() {
 
    <Section className='bg-third py-20'>
     <Container>
+      <div id="project">
       <h2 className='text-black text-text50 font-semibold font-robo pb-3 text-center'>PROJECTS</h2>
       <p className=' w-[780px]  mx-auto text-black text-lg font-normal font-robo  text-center'>Here you will find some of the personal and clients projects that I created with each project containing its own case study</p>
 
@@ -205,13 +204,13 @@ export default function Home() {
         <div>
         <h3 className='group/project1 w-w412 text-black text-text45 font-medium font-robo pb-8 text-center pt-12'>TolksME is a successful Open-Source project that I created</h3>
 
-      <Link className='relative group/project1'>
+      <RouterLink className='relative group/project1'>
       <div className=' flex justify-center items-center gap-x-3'>
        <p className='z-10 text-lg text-black font-robo font-semibold'>Case Study</p>
         <BsArrowRight className='mt-1 z-10'/>
        </div>
         <div className='group-hover/project1:w-[158px] duration-500 absolute -top-[5px] left-[128px] w-[60px] h-[40px] bg-seven'></div>
-      </Link>
+      </RouterLink>
 
         </div>
       </Flex>
@@ -222,22 +221,25 @@ export default function Home() {
         <div>
         <h3 className='group/project2 w-w412 text-black text-text45 font-medium font-robo pb-8 text-center pt-12'>TolksME is a successful Open-Source project that I created</h3>
 
-      <Link className='relative group/project2'>
+      <RouterLink className='relative group/project2'>
       <div className=' flex justify-center items-center gap-x-3'>
        <p className='z-10 text-lg text-black font-robo font-semibold'>Case Study</p>
         <BsArrowRight className='mt-1 z-10'/>
        </div>
         <div className='group-hover/project2:w-[158px] duration-500 absolute -top-[5px] left-[128px] w-[60px] h-[40px] bg-seven'></div>
-      </Link>
+      </RouterLink>
 
         </div>
       </Flex>
       
       {/* Second Project end */}
       {/* Event to Event Project start*/}
+      <div id="project2">
        <ProjectSecond/>
+      </div>
       {/* Event to Event Project start*/}
 
+      </div>
     </Container>
    </Section>
    
@@ -245,14 +247,16 @@ export default function Home() {
 
    <Section className='bg-third pt-14 pb-10'>
     <Container>
-      <h2 className='text-text50 text-black font-medium font-robo text-center pb-3'>Services</h2>
-      <p className='w-w833 text-center mx-auto text-lg text-black font-robo font-normal pb-20'>Our consultants have years of experience on the in success. ​Through the provision of our services. Find the service we provide</p>
+      <div id='service'>
+      <h2 className='text-text50 text-black font-medium font-robo text-center pb-4'>Services</h2>
+      <p className='w-w833 text-center mx-auto text-lg text-black font-robo font-normal pb-16'>Our consultants have years of experience on the in success. ​Through the provision of our services. Find the service we provide</p>
       <Flex className='justify-between'>
         <ServiceCard heading='E-Commerce' para='Development'/>
         <ServiceCard heading='Social Media' para='Development'/>
         <ServiceCard heading='Corporate' para='Development'/>
         <ServiceCard heading='Personal' para='Development'/>
       </Flex>
+      </div>
     </Container>
    </Section>
 
@@ -260,8 +264,9 @@ export default function Home() {
 
    <Section className='bg-third py-24'>
     <Container>
-      <h2 className='text-text50 text-black font-medium font-robo text-center pb-5'>CONTACT</h2>
-      <p className='w-w680 text-center mx-auto text-lg text-black font-robo font-normal pb-14'>Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</p>
+      <div id="contact">
+      <h2 className='text-text50 text-black font-medium font-robo text-center pb-2'>CONTACT</h2>
+      <p className='w-w680 text-center mx-auto text-lg text-black font-robo font-normal pb-8'>Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</p>
       <Flex className='justify-between'>
         <h3 className='w-w412 text-black text-text45 font-medium font-robo pb-3 text-center pt-12'>Find clients easily on LinkedIn without any technical skills</h3>
         <div className='w-[570px] h-[470px] bg-four rounded-2xl border-white border-2  '>
@@ -280,22 +285,15 @@ export default function Home() {
             <textarea id="message" type="text" className='w-full h-[110px] bg-third rounded placeholder:text-six placeholder:text-base placeholder:font-robo placeholder:font-normal py-2 px-6 mb-3' placeholder='Enter Your Messages:'/>
             </div>
             <Button text="Message" className='flex mx-auto mt-2 py-2' />
-            
           </form>
          </div>
-         
         </div>
         
-        
       </Flex>
+      </div>
     </Container>
 
    </Section>
-   
-
-
-   
-   
   </>
   )
 }

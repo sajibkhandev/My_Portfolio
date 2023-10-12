@@ -8,6 +8,10 @@ import Flex from '../components/Flex'
 import Education from '../components/icons/Education'
 import {TiStarburst} from 'react-icons/ti'
 import {BsArrowRight } from 'react-icons/bs'
+import {AiFillLinkedin,AiOutlineTwitter,AiOutlineGithub } from 'react-icons/ai'
+import {FaBookOpen,FaYoutube} from 'react-icons/fa'
+import {BiSolidMessageRounded} from 'react-icons/bi'
+import {MdWavingHand} from 'react-icons/md'
 
 import project1 from '../assets/project1.png'
 import project2 from '../assets/project2.png'
@@ -24,7 +28,15 @@ export default function Home() {
 
   return (
   <>
-   <Section className='bg-primary pb-32' >
+   <div className='absolute right-[25px] bottom-[15px] flex justify-center items-center gap-x-4 z-10'>
+        <div>
+          <button className='bg-four py-2 px-4 rounded-xl font-robo text-sm drop-shadow-2xl flex justify-center items-center gap-x-2'>Chat with Me <MdWavingHand  className='text-yellow-500 text-base'/></button>
+        </div>
+        <div className='bg-secondary rounded-full w-[60px] h-[60px] flex justify-center items-center drop-shadow-2xl'>
+          <BiSolidMessageRounded className='text-[27px] text-white'/>
+        </div>
+      </div>
+   <Section className='bg-primary pb-32 relative' >
       {/* <div className='bg-banner h-screen bg-no-repeat bg-center bg-cover'></div> */}
       <Container>
         <div id="hero">
@@ -34,7 +46,13 @@ export default function Home() {
         <ScrollLink to="project2" spy={true} smooth={true} offset={50} duration={1200} ><Button text="View Project" className='flex mx-auto mt-8 '/></ScrollLink>
         </div>
       </Container>
-    
+      <div className='bg-third h-[250px] w-[40px] absolute left-0 top-[100px] flex flex-col justify-between items-center p-6 drop-shadow-xl '>
+        <AiFillLinkedin className='text-3xl'/>
+        <AiOutlineTwitter className='text-3xl'/>
+        <FaYoutube className='text-[25px]'/>
+        <AiOutlineGithub className='text-3xl'/>
+        <FaBookOpen className='text-2xl'/>
+      </div>
    </Section>
 
   

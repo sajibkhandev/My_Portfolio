@@ -10,7 +10,7 @@ import { Link } from 'react-scroll'
 
 export default function Navber() {
   return (
-    <Section className='bg-primary py-16'>
+    <Section className='bg-primary py-12'>
         <Container>
             <Flex>
                 <div className='w-1/2'>

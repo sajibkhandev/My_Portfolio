@@ -28,7 +28,7 @@ export default function Home() {
 
   return (
   <>
-   <div className='absolute right-[25px] bottom-[15px] flex justify-center items-center gap-x-4 z-10'>
+   <div className='fixed right-[25px] bottom-[15px] flex justify-center items-center gap-x-4 z-10'>
         <div>
           <button className='bg-four py-2 px-4 rounded-xl font-robo text-sm drop-shadow-2xl flex justify-center items-center gap-x-2'>Chat with Me <MdWavingHand  className='text-yellow-500 text-base'/></button>
         </div>
@@ -36,6 +36,7 @@ export default function Home() {
           <BiSolidMessageRounded className='text-[27px] text-white'/>
         </div>
       </div>
+
    <Section className='bg-primary pb-32 relative' >
       {/* <div className='bg-banner h-screen bg-no-repeat bg-center bg-cover'></div> */}
       <Container>

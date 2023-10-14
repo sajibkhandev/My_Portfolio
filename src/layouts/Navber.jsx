@@ -64,8 +64,8 @@ export default function Navber() {
         <Container>
             <Flex>
                 <div className='w-1/2'>
-                   <Flex className='items-center gap-x-5'>
-                   <Image src={logo}/>
+                   <Flex className='items-center gap-x-3'>
+                   <Image src={logo} className='w-[70px] h-[70px]'/>
                     <h2 className='text-secondary text-text28 font-robo font-semibold'>SAJIB KHAN</h2>
                    </Flex>
                 </div>

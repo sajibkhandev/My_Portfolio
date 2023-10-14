@@ -4,7 +4,7 @@ import Container from '../components/Container'
 import Flex from '../components/Flex'
 import { FaYoutube,FaFacebookF,FaInstagram,FaTwitter,FaLinkedinIn } from 'react-icons/fa'
 import List from '../components/List'
-import footer from '../assets/footerLogo.png'
+import logo from '../assets/logo.png'
 import Image from '../components/Image'
 
 export default function Footer() {
@@ -14,7 +14,7 @@ export default function Footer() {
       <Flex className='justify-between'>
         <div className='w-6/12'>
           <Flex className='gap-x-5 items-center pb-24'>
-            <Image src={footer}/>
+            <Image src={logo} className="w-[90px]"/>
             <h4 className='text-4xl text-white font-robo font-semibold'>SAJIB KHAN</h4>
           </Flex>
           <Flex className='gap-x-4 pl-14'>

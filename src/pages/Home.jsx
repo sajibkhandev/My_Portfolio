@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Section from '../components/Section'
 import Container from '../components/Container'
 import Button from '../components/Button'
@@ -15,6 +15,7 @@ import {MdWavingHand} from 'react-icons/md'
 
 import project1 from '../assets/project1.png'
 import project2 from '../assets/project2.png'
+import CV from '../assets/sajibkhanCv.pdf'
 
 
 import ServiceCard from '../components/ServiceCard'
@@ -23,9 +24,8 @@ import { Link as RouterLink  } from 'react-router-dom'
 import { Link as ScrollLink } from 'react-scroll'
 
 export default function Home() {
- 
-  
 
+  
   return (
   <>
    <div className='fixed right-[25px] bottom-[15px] flex justify-center items-center gap-x-4 z-10'>
@@ -41,18 +41,18 @@ export default function Home() {
       {/* <div className='bg-banner h-screen bg-no-repeat bg-center bg-cover'></div> */}
       <Container>
         <div id="hero">
-        <h2 className='text-text50 text-black font-pop font-semibold pt-32 pb-4 text-center'>HEY, I'M MOHAMMAD SAJIB KHAN</h2>
-        <p className='text-center mx-auto w-w725 leading-8  text-lg text-black font-robo font-normal'>A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product</p>
+        <h2 className='text-text50 text-black font-pop font-semibold pt-28 pb-4 text-center'>HEY, I'M MOHAMMAD SAJIB KHAN</h2>
+        <p className='text-center mx-auto w-w725 leading-9  text-lg text-black font-robo font-normal'>A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product</p>
         
         <ScrollLink to="project2" spy={true} smooth={true} offset={50} duration={1200} ><Button text="View Project" className='flex mx-auto mt-8 '/></ScrollLink>
         </div>
       </Container>
-      <div className='bg-third h-[250px] w-[40px] absolute left-0 top-[100px] flex flex-col justify-between items-center p-6 drop-shadow-xl '>
-        <AiFillLinkedin className='text-3xl'/>
-        <AiOutlineTwitter className='text-3xl'/>
-        <FaYoutube className='text-[25px]'/>
-        <AiOutlineGithub className='text-3xl'/>
-        <FaBookOpen className='text-2xl'/>
+      <div className='bg-third h-[270px] w-[40px] absolute left-0 top-[90px] flex flex-col justify-between items-center p-7 drop-shadow-xl '>
+        <AiFillLinkedin className='text-[34px]'/>
+        <AiOutlineTwitter className='text-[34px]'/>
+        <FaYoutube className='text-[30px]'/>
+        <AiOutlineGithub className='text-[34px]'/>
+        <FaBookOpen className='text-[27px]'/>
       </div>
    </Section>
 
@@ -88,9 +88,10 @@ export default function Home() {
        </div>
         </Flex>
         <p className='text-black text-lg font-normal font-robo pt-10 pb-8'>I'm a Frontend Web Developer building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.</p>
+        <a href={CV} download="">
         <Button text="Download CV" className='px-12'/>
+        </a>
         </div>
-        
       </Flex>
       </div>
 

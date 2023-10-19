@@ -2,10 +2,11 @@ import React from 'react'
 import Section from '../components/Section'
 import Container from '../components/Container'
 import Flex from '../components/Flex'
-import { FaYoutube,FaFacebookF,FaInstagram,FaTwitter,FaLinkedinIn } from 'react-icons/fa'
+import { FaYoutube,FaFacebookF,FaGithub,FaTwitter,FaLinkedinIn } from 'react-icons/fa'
 import List from '../components/List'
 import logo from '../assets/logo.png'
 import Image from '../components/Image'
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
@@ -18,11 +19,21 @@ export default function Footer() {
             <h4 className='text-4xl text-white font-robo font-semibold'>SAJIB KHAN</h4>
           </Flex>
           <Flex className='gap-x-4 pl-14'>
+            <Link to='https://www.linkedin.com/in/md-sajib-khan-888a19287/'>
             <FaLinkedinIn className='text-white text-3xl'/>
+            </Link>
+            <Link to='https://github.com/sajibkhandev'>
+            <FaGithub className='text-white text-3xl'/>
+            </Link>
+            <Link to='https://www.facebook.com/mdsajib.mia.3152/'>
             <FaFacebookF className='text-white text-3xl'/>
+            </Link>
+            <Link to='https://twitter.com/sajib562341'>
             <FaTwitter className='text-white text-3xl'/>
-            <FaInstagram className='text-white text-3xl'/>
+            </Link>
+            <Link>
             <FaYoutube className='text-white text-3xl'/>
+            </Link>
           </Flex>
 
         </div>
@@ -40,7 +51,7 @@ export default function Footer() {
           <h6 className='text-base text-white font-robo font-semibold pb-9'>PRODUCT</h6>
          <ul className='flex flex-col gap-y-2'>
          <List className='text-sm text-white font-normal font-robo' text='Orebi' />
-          <List className='text-sm text-white font-normal font-robo' text='TolksME' />
+          <List className='text-sm text-white font-normal font-robo' text='TalksME' />
           <List className='text-sm text-white font-normal font-robo' text='Avada' />
           <List className='text-sm text-white font-normal font-robo' text='Innovate' />
          </ul>

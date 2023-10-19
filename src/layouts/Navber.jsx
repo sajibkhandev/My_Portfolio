@@ -72,11 +72,11 @@ export default function Navber() {
                 <Flex className='w-1/2 justify-end '>
                     <ul className='flex gap-x-7 items-center'>
                         
-                        <Link onClick={handleHome} to="hero" spy={true} smooth={true} offset={-170} duration={100} ><List text="Home" className={`after:absolute after:-bottom-[2px] after:left-0 hover:after:w-1/2 ${home?"hover:after:w-full text-red-500":""}  after:h-[3px] after:bg-white`}/></Link>
-                        <Link onClick={handleAbout} to="about" spy={true} smooth={true} offset={-50} duration={600} ><List text="About" className={`after:absolute after:-bottom-[2px] after:left-0 hover:after:w-1/2 ${about?"hover:after:w-full text-red-500":""}  after:h-[3px] after:bg-white`}/></Link>
-                        <Link onClick={handleProject} to="project" spy={true} smooth={true} offset={-25} duration={1200}><List text="Project" className={`after:absolute after:-bottom-[2px] after:left-0 hover:after:w-1/2 ${project?"hover:after:w-full text-red-500":""}  after:h-[3px] after:bg-white`}/></Link>
-                        <Link onClick={handleService} to="service" spy={true} smooth={true} offset={-40} duration={1600}><List text="Service" className={`after:absolute after:-bottom-[2px] after:left-0 hover:after:w-1/2 ${service?"hover:after:w-full text-red-500":""}  after:h-[3px] after:bg-white`}/></Link>
-                        <Link onClick={handleContact} to="contact" spy={true} smooth={true} offset={-10} duration={2000}><List text="Contact" className={`after:absolute after:-bottom-[2px] after:left-0 hover:after:w-1/2 ${contact?"hover:after:w-full text-red-500":""}  after:h-[3px] after:bg-white`}/></Link>
+                        <Link onClick={handleHome} to="hero" spy={true} smooth={true} offset={-170} duration={100} ><List text="Home" className={`after:absolute after:-bottom-[2px] after:left-0 hover:after:w-1/2 ${home?"hover:after:w-full":""}  after:h-[3px] after:bg-white`}/></Link>
+                        <Link onClick={handleAbout} to="about" spy={true} smooth={true} offset={-50} duration={600} ><List text="About" className={`after:absolute after:-bottom-[2px] after:left-0 hover:after:w-1/2 ${about?"hover:after:w-full":""}  after:h-[3px] after:bg-white`}/></Link>
+                        <Link onClick={handleProject} to="project" spy={true} smooth={true} offset={-25} duration={1200}><List text="Project" className={`after:absolute after:-bottom-[2px] after:left-0 hover:after:w-1/2 ${project?"hover:after:w-full":""}  after:h-[3px] after:bg-white`}/></Link>
+                        <Link onClick={handleService} to="service" spy={true} smooth={true} offset={-40} duration={1600}><List text="Service" className={`after:absolute after:-bottom-[2px] after:left-0 hover:after:w-1/2 ${service?"hover:after:w-full":""}  after:h-[3px] after:bg-white`}/></Link>
+                        <Link onClick={handleContact} to="contact" spy={true} smooth={true} offset={-10} duration={2000}><List text="Contact" className={`after:absolute after:-bottom-[2px] after:left-0 hover:after:w-1/2 ${contact?"hover:after:w-full":""}  after:h-[3px] after:bg-white`}/></Link>
                     </ul>
 
                 </Flex>

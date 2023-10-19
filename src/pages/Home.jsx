@@ -9,7 +9,7 @@ import Education from '../components/icons/Education'
 import {TiStarburst} from 'react-icons/ti'
 import {BsArrowRight } from 'react-icons/bs'
 import {AiFillLinkedin,AiOutlineTwitter,AiOutlineGithub } from 'react-icons/ai'
-import {FaBookOpen,FaYoutube} from 'react-icons/fa'
+import {FaBookOpen,FaYoutube,FaFacebookSquare} from 'react-icons/fa'
 import {BiSolidMessageRounded} from 'react-icons/bi'
 import {MdWavingHand} from 'react-icons/md'
 
@@ -20,7 +20,7 @@ import CV from '../assets/sajibkhanCv.pdf'
 
 import ServiceCard from '../components/ServiceCard'
 import ProjectSecond from '../components/ProjectSecond'
-import { Link as RouterLink  } from 'react-router-dom'
+import { Link, Link as RouterLink  } from 'react-router-dom'
 import { Link as ScrollLink } from 'react-scroll'
 
 export default function Home() {
@@ -48,11 +48,25 @@ export default function Home() {
         </div>
       </Container>
       <div className='bg-third h-[270px] w-[40px] absolute left-0 top-[90px] flex flex-col justify-between items-center p-7 drop-shadow-xl '>
+        <Link to="https://www.linkedin.com/in/md-sajib-khan-888a19287/">
         <AiFillLinkedin className='text-[34px]'/>
-        <AiOutlineTwitter className='text-[34px]'/>
-        <FaYoutube className='text-[30px]'/>
+        </Link>
+
+        <Link to='https://github.com/sajibkhandev'>
         <AiOutlineGithub className='text-[34px]'/>
-        <FaBookOpen className='text-[27px]'/>
+        </Link>
+
+        <Link>
+        <FaYoutube className='text-[30px]'/>
+        </Link>
+
+        <Link to='https://twitter.com/sajib562341'>
+        <AiOutlineTwitter className='text-[34px]'/>
+        </Link>
+        
+        <Link to="https://www.facebook.com/mdsajib.mia.3152/">
+        <FaFacebookSquare className='text-[30px]'/>
+        </Link>
       </div>
    </Section>
 
@@ -220,9 +234,12 @@ export default function Home() {
       <p className=' w-[780px]  mx-auto text-black text-lg font-normal font-robo  text-center'>Here you will find some of the personal and clients projects that I created with each project containing its own case study</p>
 
       <Flex className='justify-between items-center pt-5 group/project1'>
+        <Link to='/casestudy'>
         <Image src={project1}/>
+        </Link>
+        <Link to='/casestudy'>
         <div>
-        <h3 className='group/project1 w-w412 text-black text-text45 font-medium font-robo pb-8 text-center pt-12'>TolksME is a successful Open-Source project that I created</h3>
+        <h3 className='group/project1 w-w412 text-black text-text45 font-medium font-robo pb-8 text-center pt-12'>TalksME is a successful Open-Source  project that I am creating</h3>
 
       <RouterLink className='relative group/project1'>
       <div className=' flex justify-center items-center gap-x-3'>
@@ -233,13 +250,18 @@ export default function Home() {
       </RouterLink>
 
         </div>
+        </Link>
       </Flex>
       {/* Second Project Start */}
 
       <Flex className='justify-between items-center pt-36 group/project2 '>
-      <Image src={project2}/>
+        <Link to='/casestudy2'>
+        <Image src={project2}/>
+
+        </Link>
+        <Link to='/casestudy2'>
         <div>
-        <h3 className='group/project2 w-w412 text-black text-text45 font-medium font-robo pb-8 text-center pt-12'>TolksME is a successful Open-Source project that I created</h3>
+        <h3 className='group/project2 w-w412 text-black text-text45 font-medium font-robo pb-8 text-center pt-12'>Orebi is a convenient online store where you can purchase any products</h3>
 
       <RouterLink className='relative group/project2'>
       <div className=' flex justify-center items-center gap-x-3'>
@@ -250,6 +272,7 @@ export default function Home() {
       </RouterLink>
 
         </div>
+        </Link>
       </Flex>
       
       {/* Second Project end */}
@@ -287,8 +310,8 @@ export default function Home() {
       <div id="contact">
       <h2 className='text-text50 text-black font-medium font-robo text-center pb-2'>CONTACT</h2>
       <p className='w-w680 text-center mx-auto text-lg text-black font-robo font-normal pb-8'>Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</p>
-      <Flex className='justify-between'>
-        <h3 className='w-w412 text-black text-text45 font-medium font-robo pb-3 text-center pt-12'>Find clients easily on LinkedIn without any technical skills</h3>
+      <Flex className='justify-between '>
+        <h3 className='w-w412 text-black text-text45 font-medium font-robo pb-3 text-center pt-12 mt-12'>Find Me easily Contact without any technical skills</h3>
         <div className='w-[570px] h-[470px] bg-four rounded-2xl border-white border-2  '>
          <div className='py-10 px-14'>
          <form action="">

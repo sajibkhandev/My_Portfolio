@@ -9,7 +9,8 @@ import {
 import RootElement from './components/RootElement';
 import Home from './pages/Home';
 import Error from './pages/Error';
-import About from './pages/About';
+import CaseStudyPage from './pages/CaseStudyPage';
+import CaseStudyPage2 from './pages/CaseStudyPage2';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -24,8 +25,12 @@ const router = createBrowserRouter(
         </Route>
 
         <Route
-        path="/about"
-        element={<About />} >
+        path="/casestudy"
+        element={<CaseStudyPage />} >
+        </Route>
+        <Route
+        path="/casestudy2"
+        element={<CaseStudyPage2 />} >
         </Route>
 
         <Route

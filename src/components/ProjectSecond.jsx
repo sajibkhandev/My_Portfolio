@@ -52,12 +52,12 @@ export default function ProjectSecond() {
       };
   return (
     <div>
-            <h2 className='text-black text-text50 font-normal font-robo pt-32 pb-5 text-center'>Event to Event Project</h2>
-      <Flex className='flex justify-center gap-x-1 '>
+            <h2 className='text-black text-2xl md:text-text50 font-normal font-robo pt-32 pb-5 text-center'>Event to Event Project</h2>
+      <Flex className='flex justify-center gap-x-0.5 md:gap-x-1 '>
         {
           items.map((item,index)=>(
             <div key={index} onClick={()=>handleClick(index)}>
-              <List text={item} className={`${index===activeIndex?"bg-black text-white ":""} rounded text-2xl font-robo py-1 px-4   cursor-pointer`}/>
+              <List text={item} className={`${index===activeIndex?"bg-black text-white ":""} rounded md:text-2xl font-robo py-0.5 px-2 md:py-1 md:px-4   cursor-pointer`}/>
             </div>
           ))
         }

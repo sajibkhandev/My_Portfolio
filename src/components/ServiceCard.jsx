@@ -7,7 +7,7 @@ import {FaReact,FaPlus } from 'react-icons/fa'
 export default function ServiceCard({heading,para}) {
   return (
     <div>
-         <div className=' group/div w-[265px] h-[310px] bg-four rounded-lg drop-shadow relative'>
+         <div className='my-14 group/div w-[265px] h-[310px] bg-four rounded-lg drop-shadow relative'>
           <div className='group-hover/div:bg-seven w-[190px] h-[92px] bg-primary rounded-tr-lg absolute -bottom-[25px] left-0 '>
           <Flex className='py-4 px-3 gap-x-3'>
             <div className='group-hover/div:bg-white w-[30px] h-[2px] bg-black mt-3'></div>

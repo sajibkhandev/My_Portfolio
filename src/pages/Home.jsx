@@ -28,47 +28,47 @@ export default function Home() {
   
   return (
   <>
-   {/* <div className='fixed right-[25px] bottom-[15px] flex justify-center items-center gap-x-4 z-10'>
+   <div className=' fixed right-[10px] md:right-[25px] bottom-[15px] md:bottom-[15px] flex justify-center items-center gap-x-1 md:gap-x-4 z-10'>
         <div>
-          <button className='bg-four py-2 px-4 rounded-xl font-robo text-sm drop-shadow-2xl flex justify-center items-center gap-x-2'>Chat with Me <MdWavingHand  className='text-yellow-500 text-base'/></button>
+          <button className='bg-four py-1 px-2 md:py-2 md:px-4 rounded-xl font-robo text-xs md:text-sm drop-shadow-2xl flex justify-center items-center gap-x-2'>Chat with Me <MdWavingHand  className='text-yellow-500 md:text-base'/></button>
         </div>
-        <div className='bg-secondary rounded-full w-[60px] h-[60px] flex justify-center items-center drop-shadow-2xl'>
-          <BiSolidMessageRounded className='text-[27px] text-white'/>
+        <div className='bg-secondary rounded-full md:w-[60px] w-[30px] h-[30px] md:h-[60px] flex justify-center items-center drop-shadow-2xl'>
+          <BiSolidMessageRounded className='md:text-[27px] text-white'/>
         </div>
-      </div> */}
+      </div>
 
    <Section className='bg-primary pb-20 md:pb-32 relative' >
       {/* <div className='bg-banner h-screen bg-no-repeat bg-center bg-cover'></div> */}
       <Container>
         <div id="hero">
-        <h2 className=' text-[27px] pt-14  md:text-text50 lg:text-4xl text-black font-pop font-semibold md:pt-28 pb-4 text-center'>HEY, I'M MOHAMMAD SAJIB KHAN</h2>
+        <h2 className=' text-[27px] pt-5  md:text-text50  text-4xl text-black font-pop font-semibold md:pt-28 md:pb-7 pb-4 text-center'>HEY, I'M MOHAMMAD SAJIB KHAN</h2>
         <p className='text-center mx-auto px-4 md:w-w725 md:leading-9 text-sm  md:text-lg text-black font-robo font-normal'>A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product</p>
        
         
         <ScrollLink to="project2" spy={true} smooth={true} offset={50} duration={1200} ><Button text="View Project" className='flex mx-auto mt-8 '/></ScrollLink>
         </div>
       </Container>
-      {/* <div className='bg-third h-[270px] w-[40px] absolute left-0 top-[90px] flex flex-col justify-between items-center p-7 drop-shadow-xl '>
+      <div className=' bg-third h-[120px] w-[10px] md:h-[270px] md:w-[40px] absolute left-0 top-[200px] md:top-[90px] flex flex-col justify-between items-center p-3 md:p-7 drop-shadow-xl '>
         <Link to="https://www.linkedin.com/in/md-sajib-khan-888a19287/">
-        <AiFillLinkedin className='text-[34px]'/>
+        <AiFillLinkedin className='md:text-[34px]'/>
         </Link>
 
         <Link to='https://github.com/sajibkhandev'>
-        <AiOutlineGithub className='text-[34px]'/>
+        <AiOutlineGithub className='md:text-[34px]'/>
         </Link>
 
         <Link>
-        <FaYoutube className='text-[30px]'/>
+        <FaYoutube className='md:text-[30px]'/>
         </Link>
 
         <Link to='https://twitter.com/sajib562341'>
-        <AiOutlineTwitter className='text-[34px]'/>
+        <AiOutlineTwitter className='md:text-[34px]'/>
         </Link>
         
         <Link to="https://www.facebook.com/mdsajib.mia.3152/">
-        <FaFacebookSquare className='text-[30px]'/>
+        <FaFacebookSquare className='text-sm md:text-[30px]'/>
         </Link>
-      </div> */}
+      </div>
    </Section>
 
   
@@ -102,7 +102,7 @@ export default function Home() {
         <p className='text-five text-sm  md:text-base font-robo font-normal text-center '>M.S.c  Masters Degree</p>
        </div>
         </Flex>
-        <p className=' w-full text-center px-4 text-black text-sm md:text-lg font-normal font-robo pt-10 pb-8'>I'm a Frontend Web Developer building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.</p>
+        <p className=' w-full md:text-left text-center px-4 text-black text-sm md:text-lg font-normal font-robo pt-10 pb-8'>I'm a Frontend Web Developer building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.</p>
         <a href={CV} download="">
         <Button text="Download CV" className='px-12 flex m-auto' />
         </a>
@@ -278,7 +278,7 @@ export default function Home() {
       
       {/* Second Project end */}
       {/* Event to Event Project start*/}
-      <div id="project2">
+      <div className='hidden' id="project2">
        <ProjectSecond/>
       </div>
       {/* Event to Event Project start*/}
@@ -294,7 +294,7 @@ export default function Home() {
       <div id='service'>
       <h2 className='text-3xl md:text-text50 text-black font-medium font-robo text-center pb-4'>Services</h2>
       <p className='md:w-w833 text-center px-4 mx-auto text-sm md:text-lg text-black font-robo font-normal  md:pb-16'>Our consultants have years of experience on the in success. ​Through the provision of our services. Find the service we provide</p>
-      <div className='md:flex md:justify-between mx-7 '>
+      <div className='md:flex md:justify-between mx-12'>
         <ServiceCard heading='E-Commerce' para='Development'/>
         <ServiceCard heading='Social Media' para='Development'/>
         <ServiceCard heading='Corporate' para='Development'/>
@@ -312,7 +312,7 @@ export default function Home() {
       <h2 className='text-2xl md:text-text50 text-black font-medium font-robo text-center pb-2'>CONTACT</h2>
       <p className='md:w-w680 text-center mx-4 md:mx-auto text-sm md:text-lg text-black font-robo font-normal pb-8'>Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</p>
       <div className='md:flex md:justify-between '>
-        <h3 className='hidden md:w-w412 text-black mx-4 text-2xl md:text-text45 font-medium font-robo pb-3 text-center  md:pt-12 mt-12'>Find Me easily Contact without any technical skills</h3>
+        <h3 className='hidden md:inline-block md:w-w412 text-black mx-4 text-2xl md:text-text45 font-medium font-robo pb-3 text-center  md:pt-12 mt-12'>Find Me easily Contact without any technical skills</h3>
         <div className='md:w-[570px] md:h-[470px] bg-four rounded-2xl border-white border-2  '>
          <div className='py-5 md:py-10 px-5 md:px-14'>
          <form action="">

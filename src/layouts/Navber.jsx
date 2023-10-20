@@ -63,14 +63,14 @@ export default function Navber() {
     <Section className='bg-primary py-12'>
         <Container>
             <Flex>
-                <div className='w-1/2'>
-                   <Flex className='items-center gap-x-3'>
-                   <Image src={logo} className='w-[70px] h-[70px]'/>
-                    <h2 className='text-secondary text-text28 font-robo font-semibold'>SAJIB KHAN</h2>
+                <div className='md:w-1/2'>
+                   <Flex className='items-center mx-3 gap-x-1 md:gap-x-3'>
+                   <Image src={logo} className='w-[55px] md:w-[70px] md:h-[70px]'/>
+                    <h2 className='text-secondary text-xl md:text-text28 font-robo font-semibold'>SAJIB KHAN</h2>
                    </Flex>
                 </div>
-                <Flex className='w-1/2 justify-end '>
-                    <ul className='flex gap-x-7 items-center'>
+                <Flex className='hidden md:inline-block w-1/2  '>
+                    <ul className='flex justify-end gap-x-7 items-center'>
                         
                         <Link onClick={handleHome} to="hero" spy={true} smooth={true} offset={-170} duration={100} ><List text="Home" className={`after:absolute after:-bottom-[2px] after:left-0 hover:after:w-1/2 ${home?"hover:after:w-full":""}  after:h-[3px] after:bg-white`}/></Link>
                         <Link onClick={handleAbout} to="about" spy={true} smooth={true} offset={-50} duration={600} ><List text="About" className={`after:absolute after:-bottom-[2px] after:left-0 hover:after:w-1/2 ${about?"hover:after:w-full":""}  after:h-[3px] after:bg-white`}/></Link>

@@ -64,7 +64,7 @@ export default function Navber() {
 
     let content=<div className='z-10 bg-primary w-full absolute top-[140px] left-0'>
         <div>
-            <ul className='text-center py-10'>
+            <ul className='text-center pt-5 pb-[70px]'>
             <Link onClick={handleHome} to="hero" spy={true} smooth={true} offset={-170} duration={100} ><List text="Home" className={`m-7 md:m-0 after:absolute after:-bottom-[2px] after:left-0 md:hover:after:w-1/2 ${home?"md:hover:after:w-full":""}  after:h-[3px] after:bg-white`}/></Link>
                         <Link onClick={handleAbout} to="about" spy={true} smooth={true} offset={-50} duration={600} ><List text="About" className={`m-7 md:m-0 after:absolute after:-bottom-[2px] after:left-0 md:hover:after:w-1/2 ${about?"md:hover:after:w-full":""}  after:h-[3px] after:bg-white`}/></Link>
                         <Link onClick={handleProject} to="project" spy={true} smooth={true} offset={-25} duration={1200}><List text="Project" className={`m-7 md:m-0 after:absolute after:-bottom-[2px] after:left-0 md:hover:after:w-1/2 ${project?"md:hover:after:w-full":""}  after:h-[3px] after:bg-white`}/></Link>

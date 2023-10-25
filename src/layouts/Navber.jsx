@@ -64,12 +64,12 @@ export default function Navber() {
 
     let content=<div className='z-10 bg-primary w-full absolute top-[140px] left-0'>
         <div>
-            <ul className='text-center py-6'>
-            <Link onClick={handleHome} to="hero" spy={true} smooth={true} offset={-170} duration={100} ><List text="Home" className={`m-8 md:m-0 after:absolute after:-bottom-[2px] after:left-0 md:hover:after:w-1/2 ${home?"md:hover:after:w-full":""}  after:h-[3px] after:bg-white`}/></Link>
-                        <Link onClick={handleAbout} to="about" spy={true} smooth={true} offset={-50} duration={600} ><List text="About" className={`m-8 md:m-0 after:absolute after:-bottom-[2px] after:left-0 md:hover:after:w-1/2 ${about?"md:hover:after:w-full":""}  after:h-[3px] after:bg-white`}/></Link>
-                        <Link onClick={handleProject} to="project" spy={true} smooth={true} offset={-25} duration={1200}><List text="Project" className={`m-8 md:m-0 after:absolute after:-bottom-[2px] after:left-0 md:hover:after:w-1/2 ${project?"md:hover:after:w-full":""}  after:h-[3px] after:bg-white`}/></Link>
-                        <Link onClick={handleService} to="service" spy={true} smooth={true} offset={-40} duration={1600}><List text="Service" className={`m-8 md:m-0 after:absolute after:-bottom-[2px] after:left-0 md:hover:after:w-1/2 ${service?"md:hover:after:w-full":""}  after:h-[3px] after:bg-white`}/></Link>
-                        <Link onClick={handleContact} to="contact" spy={true} smooth={true} offset={-10} duration={2000}><List text="Contact" className={`m-8 md:m-0 after:absolute after:-bottom-[2px] after:left-0 md:hover:after:w-1/2 ${contact?"md:hover:after:w-full":""}  after:h-[3px] after:bg-white`}/></Link>
+            <ul className='text-center py-10'>
+            <Link onClick={handleHome} to="hero" spy={true} smooth={true} offset={-170} duration={100} ><List text="Home" className={`m-7 md:m-0 after:absolute after:-bottom-[2px] after:left-0 md:hover:after:w-1/2 ${home?"md:hover:after:w-full":""}  after:h-[3px] after:bg-white`}/></Link>
+                        <Link onClick={handleAbout} to="about" spy={true} smooth={true} offset={-50} duration={600} ><List text="About" className={`m-7 md:m-0 after:absolute after:-bottom-[2px] after:left-0 md:hover:after:w-1/2 ${about?"md:hover:after:w-full":""}  after:h-[3px] after:bg-white`}/></Link>
+                        <Link onClick={handleProject} to="project" spy={true} smooth={true} offset={-25} duration={1200}><List text="Project" className={`m-7 md:m-0 after:absolute after:-bottom-[2px] after:left-0 md:hover:after:w-1/2 ${project?"md:hover:after:w-full":""}  after:h-[3px] after:bg-white`}/></Link>
+                        <Link onClick={handleService} to="service" spy={true} smooth={true} offset={-40} duration={1600}><List text="Service" className={`m-7 md:m-0 after:absolute after:-bottom-[2px] after:left-0 md:hover:after:w-1/2 ${service?"md:hover:after:w-full":""}  after:h-[3px] after:bg-white`}/></Link>
+                        <Link onClick={handleContact} to="contact" spy={true} smooth={true} offset={-10} duration={2000}><List text="Contact" className={`m-7 md:m-0 after:absolute after:-bottom-[2px] after:left-0 md:hover:after:w-1/2 ${contact?"md:hover:after:w-full":""}  after:h-[3px] after:bg-white`}/></Link>
             </ul>
         </div>
     </div>
@@ -103,7 +103,7 @@ let handleNavber=()=>{
                 {navber&&content}
                 </div>
                 <button onClick={handleNavber} className="text-2xl block md:hidden absolute top-1/2 -translate-y-1/2 right-5">
-                    {navber?<ImCross className="text-xs text-secondary"/>:<FaBars className="text-sm text-secondary"/>}
+                    {navber?<ImCross className="text-sm text-secondary"/>:<FaBars className="text-base text-secondary"/>}
                 </button>
             </Flex>
 

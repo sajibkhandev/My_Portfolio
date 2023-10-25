@@ -48,7 +48,7 @@ export default function Home() {
         <ScrollLink to="project2" spy={true} smooth={true} offset={50} duration={1200} ><Button text="View Project" className='flex mx-auto mt-8 '/></ScrollLink>
         </div>
       </Container>
-      <div className=' bg-third h-[120px] w-[10px] md:h-[270px] md:w-[40px] absolute left-0 top-[226px] md:top-[90px] flex flex-col justify-between items-center p-3 md:p-7 drop-shadow-xl '>
+      <div className=' bg-third h-[120px] w-[10px] md:h-[270px] md:w-[40px] absolute left-0 top-[226px] md:top-[90px] flex flex-col justify-between items-center p-3 md:p-7 md:drop-shadow-xl '>
         <Link to="https://www.linkedin.com/in/md-sajib-khan-888a19287/">
         <AiFillLinkedin className='md:text-[34px]'/>
         </Link>

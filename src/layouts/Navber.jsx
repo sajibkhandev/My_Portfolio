@@ -103,7 +103,7 @@ let handleNavber=()=>{
                 {navber&&content}
                 </div>
                 <button onClick={handleNavber} className="text-2xl block md:hidden absolute top-1/2 -translate-y-1/2 right-5">
-                    {navber?<ImCross className="text-sm text-secondary"/>:<FaBars className="text-base text-secondary"/>}
+                    {navber?<ImCross className="text-xs text-secondary"/>:<FaBars className="text-sm text-secondary"/>}
                 </button>
             </Flex>
 

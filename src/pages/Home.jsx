@@ -28,7 +28,7 @@ export default function Home() {
   
   return (
   <>
-   <div className=' fixed right-[10px] md:right-[25px] bottom-[15px] md:bottom-[15px] flex justify-center items-center gap-x-1 md:gap-x-4 z-10'>
+   <div className=' fixed right-[12px] md:right-[25px] bottom-[20px] md:bottom-[15px] flex justify-center items-center gap-x-1 md:gap-x-4 z-10'>
         <div>
           <button className='bg-four py-1 px-2 md:py-2 md:px-4 rounded-xl font-robo text-xs md:text-sm drop-shadow-2xl flex justify-center items-center gap-x-2'>Chat with Me <MdWavingHand  className='text-yellow-500 md:text-base'/></button>
         </div>
@@ -41,14 +41,14 @@ export default function Home() {
       {/* <div className='bg-banner h-screen bg-no-repeat bg-center bg-cover'></div> */}
       <Container>
         <div id="hero">
-        <h2 className=' text-[27px] pt-10  md:text-text50  text-4xl text-black font-pop font-semibold md:pt-28 md:pb-7 pb-4 text-center'>HEY, I'M MOHAMMAD SAJIB KHAN</h2>
-        <p className='text-center mx-auto px-4 md:w-w725 md:leading-9 text-sm  md:text-lg text-black font-robo font-normal'>A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product</p>
+        <h2 className=' text-[27px] pt-14  md:text-text50  text-4xl text-black font-pop font-semibold md:pt-28 md:pb-7 pb-4 text-center'>HEY, I'M MOHAMMAD SAJIB KHAN</h2>
+        <p className='text-center mx-auto px-5 md:w-w725 md:leading-9 text-sm  md:text-lg text-black font-robo font-normal'>A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product</p>
        
         
         <ScrollLink to="project2" spy={true} smooth={true} offset={50} duration={1200} ><Button text="View Project" className='flex mx-auto mt-8 '/></ScrollLink>
         </div>
       </Container>
-      <div className=' bg-third h-[120px] w-[10px] md:h-[270px] md:w-[40px] absolute left-0 top-[200px] md:top-[90px] flex flex-col justify-between items-center p-3 md:p-7 drop-shadow-xl '>
+      <div className=' bg-third h-[120px] w-[10px] md:h-[270px] md:w-[40px] absolute left-0 top-[226px] md:top-[90px] flex flex-col justify-between items-center p-3 md:p-7 drop-shadow-xl '>
         <Link to="https://www.linkedin.com/in/md-sajib-khan-888a19287/">
         <AiFillLinkedin className='md:text-[34px]'/>
         </Link>

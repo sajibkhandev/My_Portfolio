@@ -41,7 +41,7 @@ export default function Home() {
       {/* <div className='bg-banner h-screen bg-no-repeat bg-center bg-cover'></div> */}
       <Container>
         <div id="hero">
-        <h2 className=' text-[27px] pt-5  md:text-text50  text-4xl text-black font-pop font-semibold md:pt-28 md:pb-7 pb-4 text-center'>HEY, I'M MOHAMMAD SAJIB KHAN</h2>
+        <h2 className=' text-[27px] pt-10  md:text-text50  text-4xl text-black font-pop font-semibold md:pt-28 md:pb-7 pb-4 text-center'>HEY, I'M MOHAMMAD SAJIB KHAN</h2>
         <p className='text-center mx-auto px-4 md:w-w725 md:leading-9 text-sm  md:text-lg text-black font-robo font-normal'>A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product</p>
        
         

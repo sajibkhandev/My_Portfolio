@@ -82,7 +82,7 @@ let handleNavber=()=>{
     <Section className='bg-primary py-12 relative'>
         <Container>
             <Flex>
-                <div className='md:w-1/2 mx-4 md:mx-0'>
+                <div className='md:w-1/2 mx-3 md:mx-0'>
                    <Flex className='items-center gap-x-1 md:gap-x-4'>
                    <Image src={logo} className='w-[55px] md:w-[70px] md:h-[70px]'/>
                     <h2 className='text-secondary text-xl md:text-text28 font-robo font-semibold'>SAJIB KHAN</h2>
@@ -102,8 +102,8 @@ let handleNavber=()=>{
                 <div>
                 {navber&&content}
                 </div>
-                <button onClick={handleNavber} className="text-2xl block md:hidden absolute top-1/2 -translate-y-1/2 right-4">
-                    {navber?<ImCross className="text-sm text-secondary"/>:<FaBars className="text-base text-secondary"/>}
+                <button onClick={handleNavber} className="text-2xl block md:hidden absolute top-1/2 -translate-y-1/2 right-5">
+                    {navber?<ImCross className="text-xs text-secondary"/>:<FaBars className="text-sm text-secondary"/>}
                 </button>
             </Flex>
 

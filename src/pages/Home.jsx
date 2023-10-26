@@ -37,12 +37,12 @@ export default function Home() {
         </div>
       </div>
 
-   <Section className='bg-primary pb-20 md:pb-32 relative' >
+   <Section className='bg-primary pb-20 md:pb-40 relative' >
       {/* <div className='bg-banner h-screen bg-no-repeat bg-center bg-cover'></div> */}
       <Container>
         <div id="hero">
-        <h2 className=' text-[27px] pt-12  md:text-text50  text-4xl text-black font-pop font-semibold md:pt-28 md:pb-7 pb-4 text-center'>HEY, I'M MOHAMMAD SAJIB KHAN</h2>
-        <p className='text-center mx-auto px-5 md:w-w725 md:leading-9 text-sm  md:text-lg text-black font-robo font-normal'>A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product</p>
+        <h2 className=' text-[27px]  pt-12  md:text-text50  text-4xl text-black font-pop font-semibold md:pt-40 md:pb-8 pb-4 text-center'>HEY, I'M MOHAMMAD SAJIB KHAN</h2>
+        <p className='text-center mx-auto px-5 md:w-w725 md:leading-10 text-sm  md:text-lg text-black font-robo font-normal'>A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product</p>
        
         
         <ScrollLink to="project2" spy={true} smooth={true} offset={50} duration={1200} ><Button text="View Project" className='flex mx-auto mt-8 '/></ScrollLink>
@@ -244,7 +244,7 @@ export default function Home() {
 
       <RouterLink className='relative group/project1'>
       <div className=' flex justify-center items-center gap-x-1.5 md:gap-x-3'>
-       <p className='z-10 text-sm md:text-lg text-black font-robo font-semibold'>Case Study</p>
+       <p className=' z-10 text-sm md:text-lg text-black font-robo font-semibold'>Case Study</p>
         <BsArrowRight className='mt-1 z-10'/>
        </div>
         <div className='group-hover/project1:w-[120px] md:group-hover/project1:w-[158px] duration-500 absolute md:top-[12px] md:left-[128px] md:w-[60px] md:h-[40px] md:bg-seven top-[10px] left-[103px] w-[50px] h-[35px]'></div>

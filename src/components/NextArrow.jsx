@@ -8,7 +8,7 @@ export default function NextArrow(props) {
         className={`${className}  relative `}
         onClick={onClick}
       >
-        <div className='flex items-center justify-center rounded-lg w-[55px] h-[40px] bg-seven absolute -bottom-[45px] left-[600px] '>
+        <div className='flex items-center justify-center rounded-lg w-[55px] h-[40px] bg-seven absolute -bottom-[45px] left-2/3 -translate-x-2/3 md:-translate-x-1/3 md:left-[600px] '>
 
         <BsArrowRight className='text-xl text-white '/>
         </div>

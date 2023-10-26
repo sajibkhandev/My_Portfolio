@@ -278,7 +278,7 @@ export default function Home() {
       
       {/* Second Project end */}
       {/* Event to Event Project start*/}
-      <div className='hidden md:block' id="project2">
+      <div className='' id="project2">
        <ProjectSecond/>
       </div>
       {/* Event to Event Project start*/}

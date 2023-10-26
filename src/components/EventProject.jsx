@@ -4,9 +4,9 @@ import Image from './Image'
 
 export default function EventProject({src,heading,para}) {
   return (
-    <div className='pt-10 pb-10'>
+    <div className='pt-10 pb-10 '>
          <div className='group/div w-[360px] h-[245px] bg-[#FAFDFF]  rounded-xl relative overflow-hidden '>
-          <div className='w-[245px] h-[148px] bg-[#EAEDEF] rounded-md absolute top-6 left-1/2 -translate-x-1/2'>
+          <div className=' w-[245px] h-[148px] bg-[#EAEDEF] rounded-md absolute top-6 left-1/2 -translate-x-1/2'>
             <div className='w-[210px] h-[120px] bg-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded'>
               <Image src={src} className='w-full rounded'/>
 

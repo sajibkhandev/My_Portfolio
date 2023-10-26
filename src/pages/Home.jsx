@@ -37,7 +37,7 @@ export default function Home() {
         </div>
       </div>
 
-   <Section className='bg-primary pb-20 md:pb-40 relative' >
+   <Section className='bg-primary  pb-20 md:pb-40 relative' >
       {/* <div className='bg-banner h-screen bg-no-repeat bg-center bg-cover'></div> */}
       <Container>
         <div id="hero">
@@ -247,7 +247,7 @@ export default function Home() {
        <p className=' z-10 text-sm md:text-lg text-black font-robo font-semibold'>Case Study</p>
         <BsArrowRight className='mt-1 z-10'/>
        </div>
-        <div className='group-hover/project1:w-[120px] md:group-hover/project1:w-[158px] duration-500 absolute md:top-[12px] md:left-[128px] md:w-[60px] md:h-[40px] md:bg-seven top-[10px] left-[103px] w-[50px] h-[35px]'></div>
+        <div className='group-hover/project1:w-[120px] md:group-hover/project1:w-[158px] duration-500 absolute md:top-[0px] md:left-[128px] md:w-[60px] md:h-[40px] md:bg-seven top-[10px] left-[103px] w-[50px] h-[35px]'></div>
       </RouterLink>
 
         </div>
@@ -256,11 +256,11 @@ export default function Home() {
       {/* Second Project Start */}
 
       <div className='md:flex md:justify-between items-center pt-12 md:pt-36 group/project2 '>
-        <Link to='/casestudy2'>
+        <RouterLink to='/casestudy2'>
         <Image src={project2} className='py-5 px-12'/>
 
-        </Link>
-        <Link to='/casestudy2'>
+        </RouterLink>
+        <RouterLink to='/casestudy2'>
         <div>
         <h3 className='group/project2 w:full px-10 md:px-0 md:w-w412 text-black text-xl md:text-text45 font-medium md:leading-[60px] font-robo pb-4 md:pb-8 text-center pt-2 md:pt-5'>Orebi is a convenient online store where you can purchase any products</h3>
 
@@ -269,11 +269,11 @@ export default function Home() {
        <p className='z-10 text-sm md:text-lg text-black font-robo font-semibold'>Case Study</p>
         <BsArrowRight className='mt-1 z-10'/>
        </div>
-        <div className='group-hover/project2:w-[120px] md:group-hover/project2:w-[158px] duration-500 absolute md:top-[12px] md:left-[128px] md:w-[60px] md:h-[40px] md:bg-seven top-[10px] left-[103px] w-[50px] h-[35px]'></div>
+        <div className='group-hover/project2:w-[120px] md:group-hover/project2:w-[158px] duration-500 absolute md:top-[0px] md:left-[128px] md:w-[60px] md:h-[40px] md:bg-seven top-[10px] left-[103px] w-[50px] h-[35px]'></div>
       </RouterLink>
 
         </div>
-        </Link>
+        </RouterLink>
       </div>
       
       {/* Second Project end */}

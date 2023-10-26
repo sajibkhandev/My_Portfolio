@@ -37,7 +37,7 @@ export default function Footer() {
           </Flex>
 
         </div>
-        <div className='mx-20 pt-10 md:w-2/12'>
+        <div className='mx-20 md:mx-0 pt-10  md:w-2/12'>
           <h6 className='text-base text-white font-robo font-semibold pb-5 md:pb-9'>TOP FEATURES</h6>
          <ul className='flex flex-col gap-y-2'>
           <List className='text-sm text-white font-normal font-robo' text='E-Commerce' />
@@ -47,7 +47,7 @@ export default function Footer() {
          <List className='text-sm text-white font-normal font-robo' text='Chating Application' />
          </ul>
         </div>
-        <div className='hidden w-2/12'>
+        <div className='hidden md:block pt-10 w-2/12'>
           <h6 className='text-base text-white font-robo font-semibold pb-9'>PRODUCT</h6>
          <ul className='flex flex-col gap-y-2'>
          <List className='text-sm text-white font-normal font-robo' text='Orebi' />
@@ -57,7 +57,7 @@ export default function Footer() {
          </ul>
         </div>
         
-        <div className='hidden w-2/12'>
+        <div className='hidden md:block pt-10 w-2/12'>
           <h6 className='text-base text-white font-robo font-semibold pb-9'>ABOUT US</h6>
          <ul className='flex flex-col gap-y-2 '>
          <List className='text-sm text-white font-normal font-robo' text='About us' />

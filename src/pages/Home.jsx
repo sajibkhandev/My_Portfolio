@@ -98,8 +98,8 @@ export default function Home() {
         <div className='bg-four rounded-lg drop-shadow-lg w-w270 pb-4 md:h-h150'>
         <Education  className="flex justify-center mx-auto pt-3 md:pt-4 w-w20 h-h20"/>
         <h3 className='text-black text-sm md:text-xl font-robo font-medium text-center pt-4 md:pt-6'>Education</h3>
-        <p className='text-five text-xs md:text-base font-robo font-normal text-center pt-1 md:pt-2'>B.S.c  Bachelors Degree</p>
-        <p className='text-five text-sm  md:text-base font-robo font-normal text-center '>M.S.c  Masters Degree</p>
+        <p className='text-five text-xs md:text-base font-robo font-normal text-center pt-1 md:pt-2'>Diploma</p>
+        <p className='text-five text-sm  md:text-base font-robo font-normal text-center '>B.S.c  Bachelors Degree</p>
        </div>
         </Flex>
         <p className=' w-full md:text-left text-center px-4 text-black text-sm md:text-lg font-normal font-robo pt-10 pb-8'>I'm a Frontend Web Developer building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.</p>
@@ -240,14 +240,14 @@ export default function Home() {
         </Link>
         <Link to='/casestudy'>
         <div>
-        <h3 className='group/project1 w:full px-5 md:w-w412 text-black text-xl md:text-text45 font-medium font-robo pb-4 md:pb-8 text-center pt-2 md:pt-12'>TalksME is a successful Open-Source  project that I am creating</h3>
+        <h3 className='group/project1 w:full px-10 md:px-0 md:w-w412 text-black text-xl md:text-text45 font-medium font-robo pb-4 md:pb-8 text-center pt-2 md:pt-12 md:leading-[60px]'>TalksME is a successful Open-Source  project that I am creating</h3>
 
       <RouterLink className='relative group/project1'>
       <div className=' flex justify-center items-center gap-x-1.5 md:gap-x-3'>
        <p className='z-10 text-sm md:text-lg text-black font-robo font-semibold'>Case Study</p>
         <BsArrowRight className='mt-1 z-10'/>
        </div>
-        <div className='group-hover/project1:w-[120px] md:group-hover/project1:w-[158px] duration-500 absolute md:-top-[5px] md:left-[128px] md:w-[60px] md:h-[40px] bg-seven top-[10px] left-[103px] w-[50px] h-[35px]'></div>
+        <div className='group-hover/project1:w-[120px] md:group-hover/project1:w-[158px] duration-500 absolute md:top-[12px] md:left-[128px] md:w-[60px] md:h-[40px] md:bg-seven top-[10px] left-[103px] w-[50px] h-[35px]'></div>
       </RouterLink>
 
         </div>
@@ -262,14 +262,14 @@ export default function Home() {
         </Link>
         <Link to='/casestudy2'>
         <div>
-        <h3 className='group/project2 w:full px-5 md:w-w412 text-black text-xl md:text-text45 font-medium font-robo pb-4 md:pb-8 text-center pt-2 md:pt-12'>Orebi is a convenient online store where you can purchase any products</h3>
+        <h3 className='group/project2 w:full px-10 md:px-0 md:w-w412 text-black text-xl md:text-text45 font-medium md:leading-[60px] font-robo pb-4 md:pb-8 text-center pt-2 md:pt-5'>Orebi is a convenient online store where you can purchase any products</h3>
 
       <RouterLink className='relative group/project2'>
       <div className=' flex justify-center items-center gap-x-3'>
        <p className='z-10 text-sm md:text-lg text-black font-robo font-semibold'>Case Study</p>
         <BsArrowRight className='mt-1 z-10'/>
        </div>
-        <div className='group-hover/project2:w-[120px] md:group-hover/project2:w-[158px] duration-500 absolute md:-top-[5px] md:left-[128px] md:w-[60px] md:h-[40px] bg-seven top-[10px] left-[103px] w-[50px] h-[35px]'></div>
+        <div className='group-hover/project2:w-[120px] md:group-hover/project2:w-[158px] duration-500 absolute md:top-[12px] md:left-[128px] md:w-[60px] md:h-[40px] md:bg-seven top-[10px] left-[103px] w-[50px] h-[35px]'></div>
       </RouterLink>
 
         </div>
@@ -294,7 +294,7 @@ export default function Home() {
       <div id='service'>
       <h2 className='text-3xl md:text-text50 text-black font-medium font-robo text-center pb-4'>Services</h2>
       <p className='md:w-w833 text-center px-4 mx-auto text-sm md:text-lg text-black font-robo font-normal  md:pb-16'>Our consultants have years of experience on the in success. ​Through the provision of our services. Find the service we provide</p>
-      <div className='md:flex md:justify-between mx-12'>
+      <div className='md:flex md:justify-between mx-12 md:mx-0'>
         <ServiceCard heading='E-Commerce' para='Development'/>
         <ServiceCard heading='Social Media' para='Development'/>
         <ServiceCard heading='Corporate' para='Development'/>
@@ -309,10 +309,10 @@ export default function Home() {
    <Section className='bg-third pb-14 md:py-24 px-3'>
     <Container>
       <div id="contact">
-      <h2 className='text-2xl md:text-text50 text-black font-medium font-robo text-center pb-2'>CONTACT</h2>
+      <h2 className='text-2xl md:pb-5 md:text-text50 text-black font-medium font-robo text-center pb-2'>CONTACT</h2>
       <p className='md:w-w680 text-center mx-4 md:mx-auto text-sm md:text-lg text-black font-robo font-normal pb-8'>Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</p>
       <div className='md:flex md:justify-between '>
-        <h3 className='hidden md:inline-block md:w-w412 text-black mx-4 text-2xl md:text-text45 font-medium font-robo pb-3 text-center  md:pt-12 mt-12'>Find Me easily Contact without any technical skills</h3>
+        <h3 className='hidden md:inline-block md:w-w412 text-black mx-4 text-2xl md:text-text45 font-medium font-robo pb-3 text-center md:leading-[70px]  md:pt-12 mt-12'>Find Me easily Contact without any technical skills</h3>
         <div className='md:w-[570px] md:h-[470px] bg-four rounded-2xl border-white border-2  '>
          <div className='py-5 md:py-10 px-5 md:px-14'>
          <form action="">

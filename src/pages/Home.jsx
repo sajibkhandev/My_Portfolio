@@ -235,10 +235,10 @@ export default function Home() {
       <p className='w-full px-4 md:w-[780px]  mx-auto text-black text-sm md:text-lg font-normal font-robo  text-center'>Here you will find some of the personal and clients projects that I created with each project containing its own case study</p>
 
       <div className='md:flex md:justify-between items-center md:pt-5 group/project1'>
-        <Link to='/casestudy'>
+        <RouterLink to='/casestudy'>
         <Image src={project1} className='py-5 px-12'/>
-        </Link>
-        <Link to='/casestudy'>
+        </RouterLink>
+        <RouterLink to='/casestudy'>
         <div>
         <h3 className='group/project1 w:full px-10 md:px-0 md:w-w412 text-black text-xl md:text-text45 font-medium font-robo pb-4 md:pb-8 text-center pt-2 md:pt-12 md:leading-[60px]'>TalksME is a successful Open-Source  project that I am creating</h3>
 
@@ -251,7 +251,7 @@ export default function Home() {
       </RouterLink>
 
         </div>
-        </Link>
+        </RouterLink>
       </div>
       {/* Second Project Start */}
 
@@ -278,7 +278,7 @@ export default function Home() {
       
       {/* Second Project end */}
       {/* Event to Event Project start*/}
-      <div className='hidden' id="project2">
+      <div className='hidden md:block' id="project2">
        <ProjectSecond/>
       </div>
       {/* Event to Event Project start*/}

@@ -13,32 +13,32 @@ export default function CaseStudyPage() {
     <Section className='bg-third py-32'>
         <Container>
         <h2 className='text-black text-text50 font-semibold font-robo pb-5 text-center'>Orebi</h2>
-        <p className=' w-[780px]  mx-auto text-black text-lg font-normal font-robo  text-center pb-14'>This page contains the case study of TalksME Open-Source Project which includes the Project Overview, Tools Used and Live Links to the official product.</p>
+        <p className='w-full md:w-[780px] px-4 md:px-4  mx-auto text-black text-sm md:text-lg font-normal font-robo  text-center pb-14'>This page contains the case study of TalksME Open-Source Project which includes the Project Overview, Tools Used and Live Links to the official product.</p>
         <Link to="https://ecommerce-orebi.vercel.app/">
         <Button text="Project Link"  className='flex mx-auto '/>
         </Link>
         
-        <Image src={project2} className='mx-auto pt-20 w-[600px]' />
+        <Image src={project2} className='mx-auto pt-20 md:w-[600px] px-12 md:px-0' />
 
-        <div className='pt-16 w-[900px] mx-auto'>
-        <h3 className='text-black text-3xl font-semibold font-robo pb-5'>Project Overview</h3>
+        <div className='pt-16 md:w-[900px] mx-auto px-4 md:px-0'>
+        <h3 className='text-black text-xl md:text-3xl font-semibold font-robo pb-5'>Project Overview</h3>
         <Flex className='flex-col gap-y-5'>
-        <p className='text-black text-base font-normal font-robo'>Orebi, built with the dynamic capabilities of React.js and the sleek aesthetics of Tailwind CSS, delivers a seamless and secure shopping experience for users across all devices.</p>
-        <p className='text-black text-base font-normal font-robo'>With its intuitive design and customizable features, Orebi, powered by React.js and tailored with Tailwind CSS, ensures an efficient and user-centric eCommerce journey for customers of all preferences.</p>
-        <p className='text-black text-base font-normal font-robo'>Orebi's modern and scalable infrastructure, integrated with React.js and polished with Tailwind CSS, provides an elegant and feature-rich online shopping experience, promising both convenience and security to users.</p>
-        <p className='text-black text-base font-normal font-robo'>Tailored with the latest advancements in React.js and fine-tuned with the sleekness of Tailwind CSS, Orebi's versatile and interactive platform sets a new standard for modern eCommerce, ensuring a responsive and customizable shopping journey for users worldwide.</p>
+        <p className=' text-black w-full   text-sm md:text-base font-normal font-robo'>Orebi, built with the dynamic capabilities of React.js and the sleek aesthetics of Tailwind CSS, delivers a seamless and secure shopping experience for users across all devices.</p>
+        <p className=' text-black w-full   text-sm md:text-base font-normal font-robo'>With its intuitive design and customizable features, Orebi, powered by React.js and tailored with Tailwind CSS, ensures an efficient and user-centric eCommerce journey for customers of all preferences.</p>
+        <p className=' text-black w-full   text-sm md:text-base font-normal font-robo'>Orebi's modern and scalable infrastructure, integrated with React.js and polished with Tailwind CSS, provides an elegant and feature-rich online shopping experience, promising both convenience and security to users.</p>
+        <p className=' text-black w-full   text-sm md:text-base font-normal font-robo'>Tailored with the latest advancements in React.js and fine-tuned with the sleekness of Tailwind CSS, Orebi's versatile and interactive platform sets a new standard for modern eCommerce, ensuring a responsive and customizable shopping journey for users worldwide.</p>
         </Flex>
         <h4 className='text-black text-3xl font-semibold font-robo py-12 '>Tools Used</h4>
-        <div className='flex gap-x-4'>
-            <li className='py-2 px-5 bg-primary rounded list-none font-robo font-medium'>React</li>
-            <li className='py-2 px-5 bg-primary rounded list-none font-robo font-medium'>Tailwind</li>
-            <li className='py-2 px-5 bg-primary rounded list-none font-robo font-medium'>JavaScript</li>
-            <li className='py-2 px-5 bg-primary rounded list-none font-robo font-medium'>Stripe</li>
-            <li className='py-2 px-5 bg-primary rounded list-none font-robo font-medium'>React Redux</li>
-            <li className='py-2 px-5 bg-primary rounded list-none font-robo font-medium'>GIT</li>
-            <li className='py-2 px-5 bg-primary rounded list-none font-robo font-medium'>Github</li>
+        <div className='flex flex-wrap gap-x-4 md:items-center '>
+            <li className='mb-10 py-2 text-center w-[150px]  md:py-2  md:px-5 text-xs md:text-base bg-primary rounded list-none font-robo font-medium'>React</li>
+            <li className='mb-10 py-2 text-center w-[150px]  md:py-2  md:px-5 text-xs md:text-base bg-primary rounded list-none font-robo font-medium'>Tailwind</li>
+            <li className='mb-10 py-2 text-center w-[150px]  md:py-2  md:px-5 text-xs md:text-base bg-primary rounded list-none font-robo font-medium'>JavaScript</li>
+            <li className='mb-10 py-2 text-center w-[150px]  md:py-2  md:px-5 text-xs md:text-base bg-primary rounded list-none font-robo font-medium'>Stripe</li>
+            <li className='mb-10 py-2 text-center w-[150px]  md:py-2  md:px-5 text-xs md:text-base bg-primary rounded list-none font-robo font-medium'>React Redux</li>
+            <li className='mb-10 py-2 text-center w-[150px]  md:py-2  md:px-5 text-xs md:text-base bg-primary rounded list-none font-robo font-medium'>GIT</li>
+            <li className='mb-10 py-2 text-center w-[150px]  md:py-2  md:px-5 text-xs md:text-base bg-primary rounded list-none font-robo font-medium'>Github</li>
         </div>
-        <h4 className='text-black text-3xl font-semibold font-robo py-10 '>See Live</h4>
+        <h4 className='text-black text-xl md:text-3xl font-semibold font-robo py-10 '>See Live</h4>
         <Flex className='gap-x-8'>
         <Link to="https://github.com/sajibkhandev/Ecommerce_Orebi">
         <Button text="Project Live"/>

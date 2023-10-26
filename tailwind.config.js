@@ -20,6 +20,7 @@ export default {
         'w20': '20px',
         'h150': '150px',
         'h20': '20px',
+        'w40': '40%',
       },
       colors: {
         'primary': '#D3EBFF',

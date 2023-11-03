@@ -87,7 +87,7 @@ let handleNavber=()=>{
     <Section className='bg-primary py-12 relative'>
         <Container>
             <Flex>
-                <div className='md:w-1/2 mx-3 md:mx-0'>
+                <div className='md:w-1/2 mx-2 md:mx-0'>
                    <Flex className='items-center gap-x-1 md:gap-x-4'>
                    <RouterDom to='/'><Image src={logo} className='w-[55px] md:w-[70px] md:h-[70px]'/></RouterDom>
                     <RouterDom to='/'><h2 className='text-secondary text-xl md:text-text28 font-robo font-semibold'>SAJIB KHAN</h2></RouterDom>

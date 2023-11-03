@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Section from '../components/Section'
 import Container from '../components/Container'
 import Button from '../components/Button'
@@ -24,6 +24,12 @@ import { Link, Link as RouterLink  } from 'react-router-dom'
 import { Link as ScrollLink } from 'react-scroll'
 
 export default function Home() {
+  useEffect(()=>{
+    let sajib=()=>{
+      window.scrollTo({top:0})
+    }
+    setTimeout(sajib,10)
+  })
 
   
   return (
@@ -236,7 +242,7 @@ export default function Home() {
 
       <div className='md:flex md:justify-between items-center md:pt-5 group/project1'>
         <RouterLink to='/casestudy'>
-        <Image src={project1} className='py-5 px-12'/>
+        <Image src={project1} className='py-3 px-12'/>
         </RouterLink>
         <RouterLink to='/casestudy'>
         <div>
@@ -255,9 +261,9 @@ export default function Home() {
       </div>
       {/* Second Project Start */}
 
-      <div className='md:flex md:justify-between items-center pt-12 md:pt-36 group/project2 '>
+      <div className='md:flex md:justify-between items-center pt-24 md:pt-36 group/project2 '>
         <RouterLink to='/casestudy2'>
-        <Image src={project2} className='py-5 px-12'/>
+        <Image src={project2} className='py-3 px-12'/>
 
         </RouterLink>
         <RouterLink to='/casestudy2'>
@@ -289,7 +295,7 @@ export default function Home() {
    
 
 
-   <Section className='bg-third  md:pt-14 pb-10'>
+   <Section className='bg-third pt-14  md:pt-24 pb-16'>
     <Container>
       <div id='service'>
       <h2 className='text-3xl md:text-text50 text-black font-medium font-robo text-center pb-4'>Services</h2>
@@ -306,7 +312,7 @@ export default function Home() {
 
 
 
-   <Section className='bg-third pb-14 md:py-24 px-3'>
+   <Section className='bg-third pb-16 md:py-24 px-3'>
     <Container>
       <div id="contact">
       <h2 className='text-2xl md:pb-5 md:text-text50 text-black font-medium font-robo text-center pb-2'>CONTACT</h2>

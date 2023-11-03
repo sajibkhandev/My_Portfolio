@@ -79,7 +79,7 @@ export default function ProjectSecond() {
       };
   return (
     <div>
-            <h2 className='text-black text-2xl md:text-text50 font-normal font-robo pt-32 pb-5 text-center'>Event to Event Project</h2>
+            <h2 className='text-black text-2xl md:text-text50 font-normal font-robo pt-28 md:pt-36 pb-5 text-center'>Event to Event Project</h2>
       <Flex className='flex justify-center gap-x-0.5 md:gap-x-1 '>
         {
           items.map((item,index)=>(

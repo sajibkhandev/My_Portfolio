@@ -16,17 +16,18 @@ export default function CaseStudyPage() {
     setTimeout(sajib)
   })
   return (
-    <Section className='bg-third py-32'>
+    <Section className='bg-third py-20 md:py-32'>
         <Container>
         <h2 className='text-black text-text50 font-semibold font-robo pb-5 text-center'>Orebi</h2>
-        <p className='w-full md:w-[780px] px-4 md:px-4  mx-auto text-black text-sm md:text-lg font-normal font-robo  text-center pb-14'>This page contains the case study of TalksME Open-Source Project which includes the Project Overview, Tools Used and Live Links to the official product.</p>
-        <Link to="https://ecommerce-orebi.vercel.app/">
+        <p className='w-full md:w-[780px] px-4 md:px-4  mx-auto text-black text-sm md:text-lg font-normal font-robo  text-center pb-7 md:pb-14'>This page contains the case study of TalksME Open-Source Project which includes the Project Overview, Tools Used and Live Links to the official product.</p>
+        <Link to="https://github.com/sajibkhandev/Ecommerce_Orebi">
+        
         <Button text="Project Link"  className='flex mx-auto '/>
         </Link>
         
-        <Image src={project2} className='mx-auto pt-20 md:w-[600px] px-12 md:px-0' />
+        <Image src={project2} className='mx-auto pt-10 md:pt-20 md:w-[600px] px-12 md:px-0' />
 
-        <div className='pt-16 md:w-[900px] mx-auto px-4 md:px-0'>
+        <div className='pt-12 md:pt-16 md:w-[900px] mx-auto px-4 md:px-0'>
         <h3 className='text-black text-xl md:text-3xl font-semibold font-robo pb-5'>Project Overview</h3>
         <Flex className='flex-col gap-y-5'>
         <p className=' text-black w-full   text-sm md:text-base font-normal font-robo'>Orebi, built with the dynamic capabilities of React.js and the sleek aesthetics of Tailwind CSS, delivers a seamless and secure shopping experience for users across all devices.</p>
@@ -44,12 +45,12 @@ export default function CaseStudyPage() {
             <li className='mb-10 py-2 text-center w-[150px]  md:py-2  md:px-5 text-xs md:text-base bg-primary rounded list-none font-robo font-medium'>GIT</li>
             <li className='mb-10 py-2 text-center w-[150px]  md:py-2  md:px-5 text-xs md:text-base bg-primary rounded list-none font-robo font-medium'>Github</li>
         </div>
-        <h4 className='text-black text-xl md:text-3xl font-semibold font-robo py-10 '>See Live</h4>
+        <h4 className='text-black text-xl md:text-3xl font-semibold font-robo py-6 md:py-10'>See Live</h4>
         <Flex className='gap-x-8'>
-        <Link to="https://github.com/sajibkhandev/Ecommerce_Orebi">
+        <Link to="https://ecommerce-orebi.vercel.app/">
         <Button text="Project Live"/>
         </Link>
-        <Link to="">
+        <Link to="/">
         <Button text="Go Back"/>
         </Link>
         </Flex>

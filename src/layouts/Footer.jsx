@@ -71,7 +71,7 @@ export default function Footer() {
         </div>
         
       </div>
-      <p className='text-center text-sm text-white font-pop font-normal py-10 md:py-24'>Copyright 2023. Made by <u><span className='font-semibold underline-offset-1'>SAJIB KHAN</span></u></p>
+      <p className='text-center text-sm text-white font-pop font-normal pt-10 pb-16  md:py-24'>Copyright 2023. Made by <u><span className='font-semibold underline-offset-1'>SAJIB KHAN</span></u></p>
     </Container>
    </Section>
 

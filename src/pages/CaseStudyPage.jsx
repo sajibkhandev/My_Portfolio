@@ -16,17 +16,17 @@ export default function CaseStudyPage() {
     setTimeout(sajib,10)
   })
   return (
-    <Section  className='bg-third py-32'>
+    <Section  className='bg-third py-20 md:py-32 '>
         <Container>
         <h2 className='text-black text-3xl md:text-text50 font-semibold font-robo pb-5 text-center'>TalksME</h2>
-        <p className=' w-full md:w-[780px] px-4 md:px-4  mx-auto text-black text-sm md:text-lg font-normal font-robo  text-center pb-14'>This page contains the case study of TalksME Open-Source Project which includes the Project Overview, Tools Used and Live Links to the official product.</p>
+        <p className=' w-full md:w-[780px] px-4 md:px-4  mx-auto text-black text-sm md:text-lg font-normal font-robo  text-center pb-7 md:pb-14'>This page contains the case study of TalksME Open-Source Project which includes the Project Overview, Tools Used and Live Links to the official product.</p>
         <Link to="https://github.com/sajibkhandev">
         <Button text="Project Link"  className='flex mx-auto '/>
         </Link>
         
-        <Image src={project1} className='mx-auto pt-20 md:w-[600px] px-12 md:px-0' />
+        <Image src={project1} className='mx-auto pt-10 md:pt-20 md:w-[600px] px-12 md:px-0' />
 
-        <div className='pt-16 md:w-[900px] mx-auto px-4 md:px-0'>
+        <div className='pt-12 md:pt-16 md:w-[900px] mx-auto px-4 md:px-0'>
         <h3 className='text-black text-xl md:text-3xl font-semibold font-robo pb-5 '>Project Overview</h3>
         <Flex className='flex-col gap-y-5 '>
         <p className='text-black w-full   text-sm md:text-base font-normal font-robo'>TalksME is an Open-Source project which is a simple and clean multi-page portfolio website template for developers. I created this project for developers to quickly build a good-looking and fast-performing multi-page portfolio without having to code their portfolio from scratch.</p>
@@ -45,12 +45,14 @@ export default function CaseStudyPage() {
             <li className='mb-10 py-2 text-center w-[150px]  md:py-2  md:px-5 text-xs md:text-base bg-primary rounded list-none font-robo font-medium'>GIT</li>
             <li className='mb-10 py-2 text-center w-[150px]  md:py-2  md:px-5 text-xs md:text-base bg-primary rounded list-none font-robo font-medium'>Github</li>
         </div>
-        <h4 className='text-black text-xl md:text-3xl font-semibold font-robo py-10 '>See Live</h4>
+        <h4 className='text-black text-xl md:text-3xl font-semibold font-robo py-6 md:py-10 '>See Live</h4>
         <Flex className='gap-x-8'>
         <Link to='https://github.com/sajibkhandev'>
         <Button text="Project Live"/>
         </Link>
+        <Link to='/'>
         <Button text="Go Back"/>
+        </Link>
         </Flex>
         </div>
 

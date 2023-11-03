@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Button from '../components/Button'
 import Image from '../components/Image'
 import project1 from '../assets/project1.png'
@@ -9,6 +9,12 @@ import List from '../components/List'
 import { Link } from 'react-router-dom'
 
 export default function CaseStudyPage() {
+  useEffect(()=>{
+    let sajib=()=>{
+      window.scrollTo({top:0})
+    }
+    setTimeout(sajib,10)
+  })
   return (
     <Section  className='bg-third py-32'>
         <Container>

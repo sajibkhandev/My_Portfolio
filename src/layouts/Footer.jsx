@@ -15,8 +15,12 @@ export default function Footer() {
       <div className='md:flex md:justify-between'>
         <div className='md:w-6/12 mx-4'>
           <Flex className='gap-x-5 items-center pb-7 md:pb-24'>
+            <Link to='/'>
             <Image src={logo} className="w-[70px] md:w-[90px]"/>
+            </Link>
+            <Link to='/'>
             <h4 className=' text-xl md:text-4xl text-white font-robo font-semibold'>SAJIB KHAN</h4>
+            </Link>
           </Flex>
           <Flex className='gap-x-4 pl-14'>
             <Link to='https://www.linkedin.com/in/md-sajib-khan-888a19287/'>

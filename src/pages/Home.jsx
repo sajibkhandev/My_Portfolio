@@ -25,12 +25,8 @@ import { Link as ScrollLink } from 'react-scroll'
 
 export default function Home() {
   useEffect(()=>{
-    let sajib=()=>{
-      window.scrollTo({top:0})
-    }
-    setTimeout(sajib,10)
+    window.scrollTo({ top: 0})
   })
-
   
   return (
   <>

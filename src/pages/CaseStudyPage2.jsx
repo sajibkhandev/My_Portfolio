@@ -10,10 +10,7 @@ import { Link } from 'react-router-dom'
 
 export default function CaseStudyPage() {
   useEffect(()=>{
-    let sajib=()=>{
-      window.scrollTo({top:0})
-    }
-    setTimeout(sajib)
+    window.scrollTo({ top: 0})
   })
   return (
     <Section className='bg-third py-20 md:py-32'>

@@ -20,7 +20,7 @@ export default function CaseStudyPage() {
         <Container>
         <h2 className='text-black text-3xl md:text-text50 font-semibold font-robo pb-5 text-center'>TalksME</h2>
         <p className=' w-full md:w-[780px] px-4 md:px-4  mx-auto text-black text-sm md:text-lg font-normal font-robo  text-center pb-7 md:pb-14'>This page contains the case study of TalksME Open-Source Project which includes the Project Overview, Tools Used and Live Links to the official product.</p>
-        <Link to="https://github.com/sajibkhandev">
+        <Link to="https://github.com/sajibkhandev/SkyNet_chattingApp">
         <Button text="Project Link"  className='flex mx-auto '/>
         </Link>
         
@@ -47,7 +47,7 @@ export default function CaseStudyPage() {
         </div>
         <h4 className='text-black text-xl md:text-3xl font-semibold font-robo py-6 md:py-10 '>See Live</h4>
         <Flex className='gap-x-8'>
-        <Link to='https://github.com/sajibkhandev'>
+        <Link to='https://skynetchat.vercel.app/'>
         <Button text="Project Live"/>
         </Link>
         <Link to='/'>

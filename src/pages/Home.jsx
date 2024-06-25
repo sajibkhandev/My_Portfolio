@@ -43,32 +43,32 @@ export default function Home() {
       {/* <div className='bg-banner h-screen bg-no-repeat bg-center bg-cover'></div> */}
       <Container>
         <div id="hero">
-        <h2 className='text-[27px]  pt-12 sm:text-[34px]  md:text-text50  text-black font-pop font-semibold md:pt-40 md:pb-8 pb-4 text-center mx-1.5'>HEY, I'M MOHAMMAD SAJIB KHAN</h2>
-        <p className='text-center mx-auto px-5 md:w-w725 sm:leading-7 md:leading-10 text-sm   md:text-lg text-black font-robo font-normal mx-1.5 sm:mx-3'>A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product</p>
+        <h2 className='text-[27px]  pt-12 sm:text-[32px]  md:text-text50  text-black font-pop font-semibold md:pt-40 md:pb-8 pb-4 text-center mx-1.5'>HEY, I'M MOHAMMAD SAJIB KHAN</h2>
+        <p className='text-center mx-auto px-5 md:w-w725 sm:leading-7 md:leading-10 text-sm   md:text-lg text-black font-robo font-normal mx-1.5 sm:mx-4 md:mx-auto'>A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product</p>
        
         
-        <ScrollLink to="project2" spy={true} smooth={true} offset={50} duration={1200} ><Button text="View Project" className='flex mx-auto mt-8 '/></ScrollLink>
+        <ScrollLink to="project2" spy={true} smooth={true} offset={50} duration={1200} ><Button text="View Project" className='flex mx-auto mt-8 sm:mt-10'/></ScrollLink>
         </div>
       </Container>
-      <div className=' bg-third h-[120px] w-[10px] md:h-[270px] md:w-[40px] absolute left-0 top-[226px] md:top-[90px] flex flex-col justify-between items-center p-3 md:p-7 drop-shadow-xl '>
+      <div className=' bg-third h-[120px] w-[10px] sm:w-[30px] sm:h-[165px] sm:top-[190px] md:h-[270px] md:w-[40px] absolute left-0 top-[226px] md:top-[90px] flex flex-col justify-between items-center p-3  md:p-7 drop-shadow-xl '>
         <Link to="https://www.linkedin.com/in/md-sajib-khan-888a19287/">
-        <AiFillLinkedin className='md:text-[34px]'/>
+        <AiFillLinkedin className='sm:text-xl md:text-[34px]'/>
         </Link>
 
         <Link to='https://github.com/sajibkhandev'>
-        <AiOutlineGithub className='md:text-[34px]'/>
+        <AiOutlineGithub className='sm:text-xl md:text-[34px]'/>
         </Link>
 
         <Link>
-        <FaYoutube className='md:text-[30px]'/>
+        <FaYoutube className='sm:text-xl md:text-[30px]'/>
         </Link>
 
         <Link to='https://twitter.com/sajib562341'>
-        <AiOutlineTwitter className='md:text-[34px]'/>
+        <AiOutlineTwitter className='sm:text-xl md:text-[34px]'/>
         </Link>
         
         <Link to="https://www.facebook.com/mdsajib.mia.3152/">
-        <FaFacebookSquare className='text-sm md:text-[30px]'/>
+        <FaFacebookSquare className='text-sm sm:text-xl md:text-[30px]'/>
         </Link>
       </div>
    </Section>
@@ -79,8 +79,8 @@ export default function Home() {
       {/* <div className='-translate-y-[120px]'></div> */}
       <div id="about">
       <div className='pb-14' >
-      <h2 className=' text-3xl md:text-text50 text-black font-normal font-robo text-center'>ABOUT ME</h2>
-      <p className='md:w-w806 text-center mx-auto text-sm md:text-lg text-black font-robo font-normal px-4 pt-4'>Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</p>
+      <h2 className=' text-3xl sm:text-4xl md:text-text50 text-black font-normal font-robo text-center'>ABOUT ME</h2>
+      <p className='md:w-w806 sm:mx-4 md:mx-auto text-center mx-auto text-sm  md:text-lg text-black font-robo font-normal px-4 pt-4 sm:leading-7'>Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</p>
       </div>
       {/* <div className='-translate-y-[70px]'></div> */}
       <Flex >
@@ -89,7 +89,7 @@ export default function Home() {
         </div>
 
         <div className=' w-full md:w-1/2'>
-        <Flex className=' justify-between gap-x-2 px-4'>
+        <Flex className=' justify-between gap-x-2 sm:px-12 px-4'>
         <div className='bg-four rounded-lg drop-shadow-lg w-w270 pb-4 md:h-h150'>
         <Education  className="flex justify-center mx-auto pt-3 md:pt-4 w-w20 h-h20"/>
         <h3 className='text-black text-sm md:text-xl font-robo font-medium text-center pt-4 md:pt-6'>Experience</h3>
@@ -104,7 +104,7 @@ export default function Home() {
         <p className='text-five text-sm  md:text-base font-robo font-normal text-center '>B.S.c  Bachelors Degree</p>
        </div>
         </Flex>
-        <p className=' w-full md:text-left text-center px-4 text-black text-sm md:text-lg font-normal font-robo pt-10 pb-8'>I'm a Frontend Web Developer building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.</p>
+        <p className=' w-full md:text-left text-center px-4 text-black text-sm md:text-lg font-normal font-robo pt-10 pb-8 sm:leading-7 sm:px-4 md:mx-auto'>I'm a Frontend Web Developer building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.</p>
         <a href={CV} download="">
         <Button text="Download CV" className='px-12 flex m-auto' />
         </a>

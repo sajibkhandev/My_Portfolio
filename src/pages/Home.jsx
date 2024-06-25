@@ -43,8 +43,8 @@ export default function Home() {
       {/* <div className='bg-banner h-screen bg-no-repeat bg-center bg-cover'></div> */}
       <Container>
         <div id="hero">
-        <h2 className='text-[27px]  pt-12  md:text-text50  text-4xl text-black font-pop font-semibold md:pt-40 md:pb-8 pb-4 text-center mx-1.5'>HEY, I'M MOHAMMAD SAJIB KHAN</h2>
-        <p className='text-center mx-auto px-5 md:w-w725 md:leading-10 text-sm  md:text-lg text-black font-robo font-normal mx-1.5'>A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product</p>
+        <h2 className='text-[27px]  pt-12 sm:text-[34px]  md:text-text50  text-black font-pop font-semibold md:pt-40 md:pb-8 pb-4 text-center mx-1.5'>HEY, I'M MOHAMMAD SAJIB KHAN</h2>
+        <p className='text-center mx-auto px-5 md:w-w725 sm:leading-7 md:leading-10 text-sm   md:text-lg text-black font-robo font-normal mx-1.5 sm:mx-3'>A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product</p>
        
         
         <ScrollLink to="project2" spy={true} smooth={true} offset={50} duration={1200} ><Button text="View Project" className='flex mx-auto mt-8 '/></ScrollLink>

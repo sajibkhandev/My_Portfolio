@@ -120,10 +120,10 @@ export default function Home() {
 
    <Section className='bg-third pt-2 md:pt-5 md:pb-16'>
     <Container>
-      <h2 className='text-black text-3xl md:text-text50 font-medium font-robo pb-1 md:pb-3 text-center'>Skills</h2>
+      <h2 className='text-black text-3xl sm:text-4xl md:text-text50 font-medium font-robo pb-1 md:pb-3 text-center'>Skills</h2>
       <p className='text-black text-base md:text-lg font-normal font-robo text-center'>My technical level</p>
 
-      <div className='md:justify-evenly md:flex px-4'>
+      <div className='md:justify-evenly md:flex px-4 sm:px-16'>
         <div className='md:w-[430px] pb-7 md:h-[280px] rounded-xl drop-shadow-2xl bg-four mt-12 md:mt-16'>
           <h4 className='pt-8 pb-8 text-center text-xl text-black font-robo font-normal'>Frontend developer</h4>
 

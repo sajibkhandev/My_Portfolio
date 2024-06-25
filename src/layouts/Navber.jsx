@@ -87,9 +87,9 @@ let handleNavber=()=>{
     <Section className='bg-primary py-12 relative'>
         <Container>
             <Flex>
-                <div className='md:w-1/2 mx-2 md:mx-0'>
-                   <Flex className='items-center gap-x-1 md:gap-x-4'>
-                   <RouterDom to='/'><Image src={logo} className='w-[55px] md:w-[70px] md:h-[70px]'/></RouterDom>
+                <div className='mx-2 sm:mx-4 md:w-1/2  md:mx-0'>
+                   <Flex className='items-center gap-x-1 sm:gap-x-3 md:gap-x-4'>
+                   <RouterDom to='/'><Image src={logo} className='w-[55px] sm:w-[65px] sm:h-[65px] md:w-[75px] md:h-[75px]'/></RouterDom>
                     <RouterDom to='/'><h2 className='text-secondary text-xl md:text-text28 font-robo font-semibold'>SAJIB KHAN</h2></RouterDom>
                    </Flex>
                 </div>
@@ -126,7 +126,7 @@ let handleNavber=()=>{
                 <div>
                 {navber&&content}
                 </div>
-                <button onClick={handleNavber} className="text-2xl block md:hidden absolute top-1/2 -translate-y-1/2 right-5">
+                <button onClick={handleNavber} className="text-2xl block md:hidden absolute top-1/2 -translate-y-1/2 right-5 sm:right-7">
                     {navber?<ImCross className="text-sm text-secondary"/>:<FaBars className="text-base text-secondary"/>}
                 </button>
             </Flex>

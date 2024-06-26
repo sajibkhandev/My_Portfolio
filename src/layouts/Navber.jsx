@@ -87,13 +87,13 @@ let handleNavber=()=>{
     <Section className='bg-primary py-12 relative'>
         <Container>
             <Flex>
-                <div className='mx-2 sm:mx-4 md:w-1/2  md:mx-0'>
+                <div className='mx-2 sm:mx-4 md:w-1/2 md:mx:4 lg:mx-0'>
                    <Flex className='items-center gap-x-1 sm:gap-x-3 md:gap-x-4'>
-                   <RouterDom to='/'><Image src={logo} className='w-[55px] sm:w-[65px] sm:h-[65px] md:w-[75px] md:h-[75px]'/></RouterDom>
-                    <RouterDom to='/'><h2 className='text-secondary text-xl md:text-text28 font-robo font-semibold'>SAJIB KHAN</h2></RouterDom>
+                   <RouterDom to='/'><Image src={logo} className='w-[55px] sm:w-[65px] sm:h-[65px]  lg:w-[75px] lg:h-[75px]'/></RouterDom>
+                    <RouterDom to='/'><h2 className='text-secondary text-xl md:text-[24px] lg:text-text28 font-robo font-semibold'>SAJIB KHAN</h2></RouterDom>
                    </Flex>
                 </div>
-                <div className='hidden md:w-1/2 md:justify-end md:flex  md:items-center'>
+                <div className='hidden md:w-1/2 md:justify-end md:flex  md:items-center md:mx-8 xl:mx-0'>
                     <ul className='flex  gap-x-7'>
                         
                         {location.pathname==='/'?(<Link onClick={handleHome} to="hero" spy={true} smooth={true} offset={-170} duration={100} ><List text="Home" className={`after:absolute after:-bottom-[2px] after:left-0 hover:after:w-1/2 ${home?"hover:after:w-full":""}  after:h-[3px] after:bg-white`}/></Link>)

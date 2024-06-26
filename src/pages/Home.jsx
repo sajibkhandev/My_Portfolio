@@ -30,11 +30,11 @@ export default function Home() {
   
   return (
   <>
-   <div className=' fixed right-[12px] md:right-[25px] bottom-[16px] md:bottom-[15px] flex justify-center items-center gap-x-1 md:gap-x-4 z-10'>
+   <div className=' fixed right-[12px] md:right-[70px] lg:right-[25px] bottom-[16px] md:bottom-[40px] lg:bottom-[15px] flex justify-center items-center gap-x-1 md:gap-x-4 z-10'>
         <div>
-          <button className='bg-four py-1 px-2 md:py-2 md:px-4 rounded-xl font-robo text-xs md:text-sm drop-shadow-2xl flex justify-center items-center gap-x-2'>Chat with Me <MdWavingHand  className='text-yellow-500 md:text-base'/></button>
+          <button className='bg-four py-1 px-2 lg:py-2 lg:px-4 rounded-xl font-robo text-xs md:text-sm drop-shadow-2xl flex justify-center items-center gap-x-2'>Chat with Me <MdWavingHand  className='text-yellow-500 md:text-base'/></button>
         </div>
-        <div className='bg-secondary rounded-full md:w-[60px] w-[30px] h-[30px] md:h-[60px] flex justify-center items-center drop-shadow-2xl'>
+        <div className='bg-secondary rounded-full md:w-[45px] lg:w-[60px] w-[30px] h-[30px] md:h-[45px] lg:h-[60px] flex justify-center items-center drop-shadow-2xl'>
           <BiSolidMessageRounded className='md:text-[27px] text-white'/>
         </div>
       </div>
@@ -43,32 +43,32 @@ export default function Home() {
       {/* <div className='bg-banner h-screen bg-no-repeat bg-center bg-cover'></div> */}
       <Container>
         <div id="hero">
-        <h2 className='text-[27px]  pt-12 sm:text-[32px]  md:text-text50  text-black font-pop font-semibold md:pt-40 md:pb-8 pb-4 text-center mx-1.5'>HEY, I'M MOHAMMAD SAJIB KHAN</h2>
-        <p className='text-center mx-auto px-5 md:w-w725 sm:leading-7 md:leading-10 text-sm   md:text-lg text-black font-robo font-normal mx-1.5 sm:mx-4 md:mx-auto'>A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product</p>
+        <h2 className='text-[27px] sm:text-[32px] md:text-[36px] lg:text-[40px]  xl:text-text50 pt-12 text-black font-pop font-semibold md:pt-20 lg:pt-32 xl:pt-40 md:bg-6 lg:pb-8 pb-4 text-center mx-1.5'>HEY, I'M MOHAMMAD SAJIB KHAN</h2>
+        <p className='text-center mx-auto px-5 md:w-w725 sm:leading-7 md:leading-7 md:leading-10 text-sm md:text-base  lg:text-lg text-black font-robo font-normal mx-1.5 sm:mx-4 md:mx-auto'>A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product</p>
        
         
         <ScrollLink to="project2" spy={true} smooth={true} offset={50} duration={1200} ><Button text="View Project" className='flex mx-auto mt-8 sm:mt-10'/></ScrollLink>
         </div>
       </Container>
-      <div className=' bg-third h-[120px] w-[10px] sm:w-[30px] sm:h-[165px] sm:top-[190px] md:h-[270px] md:w-[40px] absolute left-0 top-[226px] md:top-[90px] flex flex-col justify-between items-center p-3  md:p-7 drop-shadow-xl '>
+      <div className=' bg-third h-[120px] w-[10px] sm:w-[30px] sm:h-[165px] sm:top-[190px] md:h-[210px] lg:h-[270px] md:w-[30px] lg:w-[40px] absolute left-0 top-[226px] md:top-[220px] lg:top-[90px] flex flex-col justify-between items-center p-3 md:p-5  lg:p-7 drop-shadow-xl '>
         <Link to="https://www.linkedin.com/in/md-sajib-khan-888a19287/">
-        <AiFillLinkedin className='sm:text-xl md:text-[34px]'/>
+        <AiFillLinkedin className='sm:text-xl md:text-[26px] lg:text-[34px]'/>
         </Link>
 
         <Link to='https://github.com/sajibkhandev'>
-        <AiOutlineGithub className='sm:text-xl md:text-[34px]'/>
+        <AiOutlineGithub className='sm:text-xl md:text-[26px] lg:text-[34px]'/>
         </Link>
 
         <Link>
-        <FaYoutube className='sm:text-xl md:text-[30px]'/>
+        <FaYoutube className='sm:text-xl md:text-[26px] lg:text-[30px]'/>
         </Link>
 
         <Link to='https://twitter.com/sajib562341'>
-        <AiOutlineTwitter className='sm:text-xl md:text-[34px]'/>
+        <AiOutlineTwitter className='sm:text-xl md:text-[26px] lg:text-[34px]'/>
         </Link>
         
         <Link to="https://www.facebook.com/mdsajib.mia.3152/">
-        <FaFacebookSquare className='text-sm sm:text-xl md:text-[30px]'/>
+        <FaFacebookSquare className='text-sm sm:text-xl md:text-[26px] lg:text-[30px]'/>
         </Link>
       </div>
    </Section>
@@ -296,7 +296,7 @@ export default function Home() {
       <div id='service'>
       <h2 className='text-3xl sm:text-4xl md:text-text50 text-black font-medium font-robo text-center pb-4'>Services</h2>
       <p className='md:w-w833 text-center px-4 mx-auto text-sm md:text-lg text-black font-robo font-normal md:pb-16 sm:leading-7'>Our consultants have years of experience on the in success. ​Through the provision of our services. Find the service we provide</p>
-      <div className='sm:flex sm:gap-x-5 px-10  md:justify-between sm:flex-wrap'>
+      <div className='sm:flex px-10 md:px-0 sm:gap-x-7 lg:gap-x-0  md:justify-between sm:flex-wrap'>
         <ServiceCard className='mx-auto' heading='E-Commerce' para='Development'/>
         <ServiceCard className='mx-auto' heading='Social Media' para='Development'/>
         <ServiceCard className='mx-auto' heading='Corporate' para='Development'/>
@@ -308,11 +308,11 @@ export default function Home() {
 
 
 
-   <Section className='bg-third pb-16 md:py-24 px-3'>
+   <Section className='bg-third pb-16 md:py-24 px-3 sm:px-16'>
     <Container>
       <div id="contact">
-      <h2 className='text-2xl md:pb-5 md:text-text50 text-black font-medium font-robo text-center pb-2'>CONTACT</h2>
-      <p className='md:w-w680 text-center mx-4 md:mx-auto text-sm md:text-lg text-black font-robo font-normal pb-8'>Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</p>
+      <h2 className='text-2xl sm:text-3xl md:pb-5 md:text-text50 text-black font-medium font-robo text-center pb-2'>CONTACT</h2>
+      <p className='md:w-w680 text-center mx-4 md:mx-auto text-sm md:text-lg text-black font-robo font-normal pb-8 sm:leading-7'>Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</p>
       <div className='md:flex md:justify-between '>
         <h3 className='hidden md:inline-block md:w-w412 text-black mx-4 text-2xl md:text-text45 font-medium font-robo pb-3 text-center md:leading-[70px]  md:pt-12 mt-12'>Find Me easily Contact without any technical skills</h3>
         <div className='md:w-[570px] md:h-[470px] bg-four rounded-2xl border-white border-2  '>

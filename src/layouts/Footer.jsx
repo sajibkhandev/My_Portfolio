@@ -14,7 +14,7 @@ export default function Footer() {
     <Container>
       <div className='md:flex md:justify-between'>
         <div className='md:w-6/12 mx-4'>
-          <Flex className='gap-x-5 items-center pb-7 md:pb-24'>
+          <Flex className='gap-x-5 items-center pb-7 md:pb-24 sm:mx-10'>
             <Link to='/'>
             <Image src={logo} className="w-[70px] md:w-[90px]"/>
             </Link>

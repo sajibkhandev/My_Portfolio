@@ -294,13 +294,13 @@ export default function Home() {
    <Section className='bg-third pt-14  md:pt-24 pb-16'>
     <Container>
       <div id='service'>
-      <h2 className='text-3xl md:text-text50 text-black font-medium font-robo text-center pb-4'>Services</h2>
-      <p className='md:w-w833 text-center px-4 mx-auto text-sm md:text-lg text-black font-robo font-normal  md:pb-16'>Our consultants have years of experience on the in success. ​Through the provision of our services. Find the service we provide</p>
-      <div className='md:flex md:justify-between mx-12 md:mx-0'>
-        <ServiceCard heading='E-Commerce' para='Development'/>
-        <ServiceCard heading='Social Media' para='Development'/>
-        <ServiceCard heading='Corporate' para='Development'/>
-        <ServiceCard heading='Personal' para='Development'/>
+      <h2 className='text-3xl sm:text-4xl md:text-text50 text-black font-medium font-robo text-center pb-4'>Services</h2>
+      <p className='md:w-w833 text-center px-4 mx-auto text-sm md:text-lg text-black font-robo font-normal md:pb-16 sm:leading-7'>Our consultants have years of experience on the in success. ​Through the provision of our services. Find the service we provide</p>
+      <div className='sm:flex sm:gap-x-5 px-10  md:justify-between sm:flex-wrap'>
+        <ServiceCard className='mx-auto' heading='E-Commerce' para='Development'/>
+        <ServiceCard className='mx-auto' heading='Social Media' para='Development'/>
+        <ServiceCard className='mx-auto' heading='Corporate' para='Development'/>
+        <ServiceCard className='mx-auto' heading='Personal' para='Development'/>
       </div>
       </div>
     </Container>

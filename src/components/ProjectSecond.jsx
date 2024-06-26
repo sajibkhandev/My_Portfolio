@@ -52,7 +52,7 @@ export default function ProjectSecond() {
         
         responsive: [
           {
-            breakpoint: 1024,
+            breakpoint: 1076,
             settings: {
               slidesToShow: 3,
               slidesToScroll: 3,
@@ -60,8 +60,9 @@ export default function ProjectSecond() {
               
             }
           },
+          
           {
-            breakpoint: 600,
+            breakpoint: 900,
             settings: {
               slidesToShow: 2,
               slidesToScroll: 2,
@@ -69,7 +70,14 @@ export default function ProjectSecond() {
             }
           },
           {
-            breakpoint: 480,
+            breakpoint: 720,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 380,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1

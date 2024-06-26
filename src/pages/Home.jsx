@@ -123,7 +123,7 @@ export default function Home() {
       <h2 className='text-black text-3xl sm:text-4xl md:text-text50 font-medium font-robo pb-1 md:pb-3 text-center'>Skills</h2>
       <p className='text-black text-base md:text-lg font-normal font-robo text-center'>My technical level</p>
 
-      <div className='md:justify-evenly md:flex px-4 sm:px-16'>
+      <div className='md:justify-evenly md:flex px-4 sm:px-24'>
         <div className='md:w-[430px] pb-7 md:h-[280px] rounded-xl drop-shadow-2xl bg-four mt-12 md:mt-16'>
           <h4 className='pt-8 pb-8 text-center text-xl text-black font-robo font-normal'>Frontend developer</h4>
 
@@ -233,16 +233,16 @@ export default function Home() {
    <Section className='bg-third py-20'>
     <Container>
       <div id="project">
-      <h2 className='text-black text-3xl md:text-text50 font-semibold font-robo pb-3 text-center'>PROJECTS</h2>
-      <p className='w-full px-4 md:w-[780px]  mx-auto text-black text-sm md:text-lg font-normal font-robo  text-center'>Here you will find some of the personal and clients projects that I created with each project containing its own case study</p>
+      <h2 className='text-black text-3xl sm:text-4xl md:text-text50 font-semibold font-robo pb-3 text-center'>PROJECTS</h2>
+      <p className='w-full px-4 sm:px-4 md:w-[780px]  mx-auto text-black text-sm md:text-lg font-normal font-robo  text-center sm:leading-7 '>Here you will find some of the personal and clients projects that I created with each project containing its own case study</p>
 
       <div className='md:flex md:justify-between items-center md:pt-5 group/project1'>
         <RouterLink to='/casestudy'>
-        <Image src={project1} className='py-3 px-12'/>
+        <Image src={project1} className='py-3 px-12 sm:mx-auto'/>
         </RouterLink>
         <RouterLink to='/casestudy'>
         <div>
-        <h3 className='group/project1 w:full px-10 md:px-0 md:w-w412 text-black text-xl md:text-text45 font-medium font-robo pb-4 md:pb-8 text-center pt-2 md:pt-12 md:leading-[60px]'>TalksME is a successful Open-Source  project that I am creating</h3>
+        <h3 className='group/project1 w:full px-10 md:px-0 md:w-w412 text-black text-xl md:text-text45 font-medium font-robo pb-4 md:pb-8 text-center pt-2 sm:px-20 md:pt-12 md:leading-[60px]'>TalksME is a successful Open-Source  project that I am creating</h3>
 
       <RouterLink className='relative group/project1'>
       <div className=' flex justify-center items-center gap-x-1.5 md:gap-x-3'>
@@ -259,7 +259,7 @@ export default function Home() {
 
       <div className='md:flex md:justify-between items-center pt-24 md:pt-36 group/project2 '>
         <RouterLink to='/casestudy2'>
-        <Image src={project2} className='py-3 px-12'/>
+        <Image src={project2} className='py-3 px-12 sm:mx-auto'/>
 
         </RouterLink>
         <RouterLink to='/casestudy2'>

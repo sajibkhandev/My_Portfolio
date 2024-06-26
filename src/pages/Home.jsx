@@ -79,13 +79,13 @@ export default function Home() {
       {/* <div className='-translate-y-[120px]'></div> */}
       <div id="about">
       <div className='pb-14' >
-      <h2 className=' text-3xl sm:text-4xl md:text-text50 text-black font-normal font-robo text-center'>ABOUT ME</h2>
-      <p className='md:w-w806 sm:mx-4 md:mx-auto text-center mx-auto text-sm  md:text-lg text-black font-robo font-normal px-4 pt-4 sm:leading-7'>Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</p>
+      <h2 className=' text-3xl sm:text-4xl md:text-[44px] lg:text-text50 text-black font-normal font-robo text-center'>ABOUT ME</h2>
+      <p className='lg:w-w806 sm:mx-4 lg:mx-auto text-center mx-auto text-sm  md:text-lg text-black font-robo font-normal px-4 pt-4 sm:leading-7'>Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</p>
       </div>
       {/* <div className='-translate-y-[70px]'></div> */}
-      <Flex >
-        <div className='w-1/2 hidden md:block flex items-center'>
-        <Image src={aboutImage}  className=''/>
+      <Flex className=''>
+        <div className='w-1/2 hidden md:block flex items-center '>
+        <Image src={aboutImage}  className='md:w-[80%]'/>
         </div>
 
         <div className=' w-full md:w-1/2'>

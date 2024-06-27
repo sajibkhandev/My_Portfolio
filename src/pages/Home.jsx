@@ -43,7 +43,7 @@ export default function Home() {
       {/* <div className='bg-banner h-screen bg-no-repeat bg-center bg-cover'></div> */}
       <Container>
         <div id="hero">
-        <h2 className='text-[27px] sm:text-[32px] md:text-[36px] lg:text-[40px]  xl:text-text50 pt-12 text-black font-pop font-semibold md:pt-20 lg:pt-32 xl:pt-40 md:bg-6 lg:pb-8 pb-4 text-center mx-1.5'>HEY, I'M MOHAMMAD SAJIB KHAN</h2>
+        <h2 className='text-[27px] sm:text-[32px] md:text-[36px] lg:text-[40px]  xl:text-text50 pt-12 text-black font-pop font-semibold md:pt-28 lg:pt-32 xl:pt-40 md:bg-6 lg:pb-8 pb-4 text-center mx-1.5'>HEY, I'M MOHAMMAD SAJIB KHAN</h2>
         <p className='text-center mx-auto px-5 md:w-w725 sm:leading-7 md:leading-7 md:leading-10 text-sm md:text-base  lg:text-lg text-black font-robo font-normal mx-1.5 sm:mx-4 md:mx-auto'>A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product</p>
        
         
@@ -83,30 +83,30 @@ export default function Home() {
       <p className='lg:w-w806 sm:mx-4 lg:mx-auto text-center mx-auto text-sm  md:text-lg text-black font-robo font-normal px-4 pt-4 sm:leading-7'>Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</p>
       </div>
       {/* <div className='-translate-y-[70px]'></div> */}
-      <Flex className=''>
+      <Flex className='md:px-10 lg:px-4 xl:px-0'>
         <div className='w-1/2 hidden md:block flex items-center '>
         <Image src={aboutImage}  className='md:w-[80%]'/>
         </div>
 
         <div className=' w-full md:w-1/2'>
-        <Flex className=' justify-between gap-x-2 sm:px-12 px-4'>
+        <Flex className=' justify-between gap-x-2 md:gap-x-2 lg:gap-x-2  px-4 sm:px-12 md:px-0  lg:px-0'>
         <div className='bg-four rounded-lg drop-shadow-lg w-w270 pb-4 md:h-h150'>
         <Education  className="flex justify-center mx-auto pt-3 md:pt-4 w-w20 h-h20"/>
-        <h3 className='text-black text-sm md:text-xl font-robo font-medium text-center pt-4 md:pt-6'>Experience</h3>
-        <p className='text-five text-xs md:text-base font-robo font-normal text-center pt-1 md:pt-2'>2 + years</p>
-        <p className='text-five text-sm  md:text-base font-robo font-normal text-center '>Frontend Development</p>
+        <h3 className='text-black text-sm lg:text-xl font-robo font-medium text-center pt-4 md:pt-6'>Experience</h3>
+        <p className='text-five text-xs lg:text-base font-robo font-normal text-center pt-1 md:pt-2'>2 + years</p>
+        <p className='text-five text-sm  lg:text-base font-robo font-normal text-center '>Frontend Development</p>
        </div>
 
         <div className='bg-four rounded-lg drop-shadow-lg w-w270 pb-4 md:h-h150'>
         <Education  className="flex justify-center mx-auto pt-3 md:pt-4 w-w20 h-h20"/>
-        <h3 className='text-black text-sm md:text-xl font-robo font-medium text-center pt-4 md:pt-6'>Education</h3>
-        <p className='text-five text-xs md:text-base font-robo font-normal text-center pt-1 md:pt-2'>Diploma</p>
-        <p className='text-five text-sm  md:text-base font-robo font-normal text-center '>B.S.c  Bachelors Degree</p>
+        <h3 className='text-black text-sm lg:text-xl font-robo font-medium text-center pt-4 md:pt-6'>Education</h3>
+        <p className='text-five text-xs lg:text-base font-robo font-normal text-center pt-1 md:pt-2'>Diploma</p>
+        <p className='text-five text-sm  lg:text-base font-robo font-normal text-center '>B.S.c  Bachelors Degree</p>
        </div>
         </Flex>
-        <p className=' w-full md:text-left text-center px-4 text-black text-sm md:text-lg font-normal font-robo pt-10 pb-8 sm:leading-7 sm:px-4 md:mx-auto'>I'm a Frontend Web Developer building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.</p>
+        <p className=' w-full md:text-left text-center px-4 md:px-0 text-black text-sm md:text-lg font-normal font-robo pt-10 pb-8 sm:leading-7 sm:px-4 md:mx-auto'>I'm a Frontend Web Developer building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.</p>
         <a href={CV} download="">
-        <Button text="Download CV" className='px-12 flex m-auto' />
+        <Button text="Download CV" className='px-12 flex mx-auto md:mx-0' />
         </a>
         </div>
       </Flex>

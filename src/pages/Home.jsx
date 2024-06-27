@@ -242,7 +242,7 @@ export default function Home() {
               </RouterLink>
               <RouterLink to='/casestudy'>
                 <div>
-                  <h3 className='group/project1 w:full px-10 md:px-0 md:w-w412 text-black text-xl md:text-text45 font-medium font-robo pb-4 md:pb-8 text-center pt-2 sm:px-20 md:pt-12 md:leading-[60px]'>TalksME is a successful Open-Source  project that I am creating</h3>
+                  <h3 className='group/project1 w:full px-10 md:px-0 md:w-[350px] lg:w-w412 text-black text-xl md:mr-10 lg:mr-0  md:text-[28px] lg:text-text45 font-medium font-robo pb-4 md:pb-8 text-center pt-2 sm:px-20 md:pt-12 md:leading-[42px] lg:leading-[60px]'>TalksME is a successful Open-Source  project that I am creating</h3>
 
                   <RouterLink className='relative group/project1'>
 

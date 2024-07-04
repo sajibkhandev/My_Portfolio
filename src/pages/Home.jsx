@@ -242,13 +242,13 @@ export default function Home() {
               </RouterLink>
               <RouterLink to='/casestudy'>
                 <div>
-                  <h3 className='group/project1 w:full px-10 md:px-0 md:w-[350px] lg:w-w412 text-black text-xl md:mr-10 lg:mr-0  md:text-[28px] lg:text-text45 font-medium font-robo pb-4 md:pb-8 text-center pt-2 sm:px-20 md:pt-12 md:leading-[42px] lg:leading-[60px]'>TalksME is a successful Open-Source  project that I am creating</h3>
+                  <h3 className='group/project1 w:full px-10 md:px-0 md:w-[350px] lg:w-w412 text-black text-xl md:mr-10 lg:mr-0  md:text-[28px] lg:text-text45 font-medium font-robo pb-4 md:pb-8 text-center pt-2 sm:px-20 lg:pt-12 md:leading-[42px] lg:leading-[60px]'>TalksME is a successful Open-Source  project that I am creating</h3>
 
                   <RouterLink className='relative group/project1'>
 
-                    <div className='relative '>
-                      <p className='text-sm md:text-lg text-black font-robo font-semibold absolute top-[11px] left-[141px] z-10'>Case Study</p>
-                      <BsArrowRight className='absolute top-[20px] left-[256px] z-10' />
+                    <div className='relative hidden md:block'>
+                      <p className='text-sm lg:text-lg text-black font-robo font-semibold absolute top-[11px] left-[141px] z-10'>Case Study</p>
+                      <BsArrowRight className='absolute lg:top-[20px] lg:left-[256px] md:top-[14px] md:left-[236px] z-10' />
                       <div className='group-hover/project1:w-[190px] bg-[#93C5FD] w-[68px] h-[50px] absolute top-0 left-[115px] duration-500 ease-in-out'></div>
                     </div>
                   </RouterLink>
@@ -258,19 +258,19 @@ export default function Home() {
             </div>
             {/* Second Project Start */}
 
-            <div className='md:flex md:justify-between items-center pt-24 md:pt-36 group/project2 '>
+            <div className='md:flex md:justify-between items-center lg:items-start pt-24 md:pt-36 group/project2 '>
               <RouterLink to='/casestudy2'>
                 <Image src={project2} className='py-3 px-12 sm:mx-auto' />
 
               </RouterLink>
               <RouterLink to='/casestudy2'>
                 <div>
-                  <h3 className='group/project2 w:full px-10 md:px-0 md:w-w412 text-black text-xl md:text-text45 font-medium md:leading-[60px] font-robo pb-4 md:pb-8 text-center pt-2 md:pt-5'>Orebi is a convenient online store where you can purchase any products</h3>
+                  <h3 className='group/project2 w:full px-10 md:px-0 md:w-[350px] lg:w-w412 text-black text-xl md:mr-10 lg:mr-0  md:text-[28px] lg:text-text45 font-medium font-robo pb-4 md:pb-8 text-center pt-2 sm:px-20 lg:pt-12 md:leading-[42px] lg:leading-[60px]'>Orebi is a convenient online store where you can purchase any products</h3>
 
                   <RouterLink className='relative group/project2'>
-                    <div className='relative '>
-                      <p className='text-sm md:text-lg text-black font-robo font-semibold absolute top-[11px] left-[141px] z-10'>Case Study</p>
-                      <BsArrowRight className='absolute top-[20px] left-[256px] z-10' />
+                    <div className='relative hidden md:block'>
+                      <p className='text-sm lg:text-lg text-black font-robo font-semibold absolute top-[11px] left-[141px] z-10'>Case Study</p>
+                      <BsArrowRight className='absolute lg:top-[20px] lg:left-[256px] md:top-[14px] md:left-[236px] z-10' />
                       <div className='group-hover/project2:w-[190px] bg-[#93C5FD] w-[68px] h-[50px] absolute top-0 left-[115px] duration-500 ease-in-out'></div>
                     </div>
                   </RouterLink>

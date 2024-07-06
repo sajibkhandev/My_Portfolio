@@ -19,7 +19,7 @@ export default function Footer() {
             <Image src={logo} className="w-[70px] md:w-[90px]"/>
             </Link>
             <Link to='/'>
-            <h4 className=' text-xl md:text-4xl text-white font-robo font-semibold'>SAJIB KHAN</h4>
+            <h4 className=' text-xl md:text-2xl lg:text-4xl text-white font-robo font-semibold'>SAJIB KHAN</h4>
             </Link>
           </Flex>
           <Flex className='gap-x-4 pl-14'>

@@ -242,7 +242,7 @@ export default function Home() {
               </RouterLink>
               <RouterLink to='/casestudy'>
                 <div>
-                  <h3 className='group/project1 w:full px-10 md:px-0 md:w-[350px] lg:w-w412 text-black text-xl md:mr-10 lg:mr-0  md:text-[28px] lg:text-text45 font-medium font-robo pb-4 md:pb-8 text-center pt-2 sm:px-20 lg:pt-12 md:leading-[42px] lg:leading-[60px]'>TalksME is a successful Open-Source  project that I am creating</h3>
+                  <h3 className='group/project1 w:full px-10 md:px-0 md:w-[350px] lg:w-w412 text-black  md:mr-10 lg:mr-0 text-xl md:text-[28px]  lg:text-text45 font-medium font-robo pb-4 md:pb-8 text-center pt-2 sm:px-20 lg:pt-12 md:leading-[42px] lg:leading-[60px]'>TalksME is a successful Open-Source  project that I am creating</h3>
 
                   <RouterLink className='relative group/project1'>
 
@@ -315,7 +315,7 @@ export default function Home() {
             <h2 className='text-2xl sm:text-3xl md:pb-5 md:text-[36px] lg:text-text50 text-black font-medium font-robo text-center pb-2'>CONTACT</h2>
             <p className='md:w-w680 text-center mx-4 md:mx-auto text-sm md:text-base  lg:text-lg text-black font-robo font-normal pb-8 sm:leading-7'>Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</p>
             <div className='md:flex md:justify-between '>
-              <h3 className='hidden md:inline-block md:w-w412 text-black mx-4 text-2xl md:text-text45 font-medium font-robo pb-3 text-center md:leading-[70px]  md:pt-12 mt-12'>Find Me easily Contact without any technical skills</h3>
+              <h3 className='hidden md:inline-block md:w-w412 text-black mx-4  text-xl md:text-[28px]  lg:text-text45 font-medium font-robo pb-3 text-center md:leading-[70px]  md:pt-12 mt-12'>Find Me easily Contact without any technical skills</h3>
               <div className='md:w-[570px] md:h-[470px] bg-four rounded-2xl border-white border-2  '>
                 <div className='py-5 md:py-10 px-5 md:px-14'>
                   <form action="">
